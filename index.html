@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurelia Moda</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favi-icon.png">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/mixitup.min.js"></script>
+</head>
+
+<body>
+    <nav class="nav-flex">
+        <div>
+            <h2>Aurelia Moda</h2>
+        </div>
+        <!-- <div class="flex nav-link">
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">Terms & Condition</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Contact</a></li>
+        </div> -->
+        <div class="nav-icons">
+            <div>
+                <img src="./assets/img/search-interface-symbol.png" alt="" width="20px">
+            </div>
+            <div>
+                <img src="./assets/img/bag.png" alt="" width="25px">
+            </div>
+        </div>
+    </nav>
+    <div class="banner">
+        <h3 class="banner-head">Aurelia Moda <br> Spring Collection</h3>
+        <button>SHOP NOW</button>
+    </div>
+    <section class="new-sec">
+        <h2>NEW COLLECTION</h2>
+        <p>Our latest collection, where classic and contemporary style coverage in <br>perfect harmony</p>
+        <div class="flex main">
+            <div class="product">
+                <img src="./assets/img/v2.png" alt="">
+                <h4>Everything you want to dive into</h4>
+                <p>Thoughtful designs we laboured over that are truly emblematic of our brand.</p>
+                <a href="">Shop Collection</a>
+            </div>
+            <div class="product">
+                <img src="./assets/img/v1.png" alt="">
+                <h4>FIND PERFECT LOOKS</h4>
+                <p>Effortless style that goes from bedroom to brunch and beyond.</p>
+                <a href="">Shop Collection</a>
+            </div>
+            <div class="product">
+                <img src="./assets/img/v3.png" alt="">
+                <h4>Bring home Serenity</h4>
+                <p>The Nostalgia-inducing classic is BACK.</p>
+                <a href="">Shop Collection</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="flex">
+        <div class="filters">
+            <h3>Filter Products</h3>
+
+            <div class="category">
+                <h4>Category</h4>
+                <button class="filter-btn" data-filter="all">All</button> <br>
+                <button class="filter-btn" data-filter=".men">Men Fashion</button> <br>
+                <div class="checkbox filter-btn" data-filter=".t-shirt">
+                    <input type="checkbox" placeholder="T-Shirt" name="T-Shirt" value="T-Shirt" id="Check1"
+                        onclick="onlyThis(this.id)">
+                    <label for="T-Shirt">T-Shirt</label>
+                </div>
+                <div class="checkbox filter-btn" data-filter=".shirt">
+                    <input type="checkbox" placeholder="Shirt" name="Shirt" value="Shirt" id="Check2"
+                        onclick="onlyThis(this.id)">
+                    <label for="Shirt">Shirt</label>
+                </div>
+                <script>
+                    function onlyThis(id) {
+                        for (var i = 1; i <= 2; i++) {
+                            document.getElementById('Check' + i).checked = false
+                        }
+                        document.getElementById(id).checked = true
+                    }
+                </script>
+                <button class="filter-btn" data-filter=".women">Women Fashion</button> <br>
+                <!-- <button class="filter-btn" data-filter=".decor">Decor</button> -->
+            </div>
+            <div class="order">
+                <h4>Sort by</h4>
+                <button class="sort-btn" data-sort="default:asc">Default</button><br>
+                <button class="sort-btn" data-sort="order:asc">Ascending</button><br>
+                <button class="sort-btn" data-sort="year:desc order:desc">Descending<span class="multi"></span></button>
+            </div>
+        </div>
+        <div class="product-cart" id="mix-wrapper">
+            <a href="./product1.html" class="mix-target t-shirt men" data-order="2" data-year="4">
+                <img src="./assets/p1/p1.webp" alt="">
+                <div class="cart-value">
+                    <h4>Denim Men Round Neck T-shirt</h4>
+                </div>
+                <h3><span>$32.5</span> $28.5</h3>
+            </a>
+            <a href="./product2.html" class="mix-target shirt men" data-order="11" data-year="4">
+                <img src="./assets/p2/p1.webp" alt="">
+                <div class="cart-value">
+                    <h4>White Lenin Shirt</h4>
+                </div>
+                <h3><span>$35</span> $28</h3>
+            </a>
+            <a href="./product3.html" class="mix-target t-shirt men" data-order="5" data-year="4">
+                <img src="./assets/p3/p1.webp" alt="">
+                <div class="cart-value">
+                    <h4>Jungle T-shirt - Soft Pink</h4>
+                </div>
+                <h3><span>$28</span> $22.5</h3>
+            </a>
+            <a href="./product4.html" class="mix-target decor" data-order="7" data-year="4">
+                <img src="./assets/p4/p1.webp" alt="">
+                <div class="cart-value">
+                    <h4>Sitara Tealight stand</h4>
+                    <!-- <img src="./assets/img/bag.png" alt=""> -->
+                </div>
+                <h3><span>$ 40</span> $36.2</h3>
+            </a>
+            <a href="./product5.html" class="mix-target t-shirt men" data-order="6" data-year="4">
+                <img src="./assets/p5/p1.webp" alt="">
+                <div class="cart-value">
+                    <h4>Pocket White T-shirt</h4>
+                </div>
+                <h3><span>$33.3</span> $28.5</h3>
+            </a>
+            <a href="./product6.html" class="mix-target women top " data-order="8" data-year="4">
+                <img src="./assets/p6/p1.webp" alt="">
+                <div class="cart-value">
+                    <h4>Waist Gathered Top - Blue</h4>
+                </div>
+                <h3><span>$25</span> $18</h3>
+            </a>
+            <a href="./product7.html" class="mix-target decor" data-order="10" data-year="4">
+                <img src="./assets/p7/p1.webp" alt="">
+                <div class="cart-value">
+                    <h4>Taramandai Sugar Pot & Creamer</h4>
+                </div>
+                <h3><span>$ 29.8</span> $22.5</h3>
+            </a>
+            <a href="./product8.html" class="mix-target women top" data-order="4" data-year="4">
+                <img src="./assets/p8/p1.webp" alt="">
+                <div class=" cart-value">
+                    <h4>Kep Overlay - Charcoal</h4>
+
+                </div>
+                <h3><span>$ 20</span> $15</h3>
+            </a>
+            <a href="./product9.html" class="mix-target decor" data-order="8" data-year="4">
+                <img src="./assets/p9/p1.webp" alt="">
+                <div class=" cart-value">
+                    <h4>Safari Cloche</h4>
+
+                </div>
+                <h3><span>$60</span> $50</h3>
+            </a>
+            <a href="./product10.html" class="mix-target women top" data-order="3" data-year="4">
+                <img src="./assets/p10/p1.webp" alt="">
+                <div class=" cart-value">
+                    <h4>Gina Layered Dress - Stone & Ivory</h4>
+
+                </div>
+                <h3><span>$29</span> $25</h3>
+            </a>
+            <a href="./product11.html" class="mix-target shirt men" data-order="9" data-year="4">
+                <img src="./assets/p11/p1.webp" alt="">
+                <div class=" cart-value">
+                    <h4>Runaway Shirt - Denim</h4>
+
+                </div>
+                <h3><span>$38.4</span> $32.4</h3>
+            </a>
+            <a href="./product11.html" class="mix-target shirt men" data-order="1" data-year="4">
+                <img src="./assets/p12/p1.webp" alt="">
+                <div class=" cart-value">
+                    <h4>Black denim shirt</h4>
+
+                </div>
+                <h3><span>$24.55</span> $20.99</h3>
+            </a>
+        </div>
+    </section>
+    <div class="men-bg">
+        <span>A print tribute <br>
+            to Cambodia!</span>
+        <h5>We choose a mindful material library for a collection that's <br>
+            with colors and prints that reference Combodia</h5>
+        <div class="btn-flex">
+            <button>SHOP SERENITY</button>
+            <button>SHOP MEN</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div >
+            <div class="nav-links">
+                <img src="../../../assets/bg/footer.png" alt="">
+                <div class="product-form">
+                    <h3>Sign up to get 30% OFF</h3>
+                    <input type="text" placeholder="Enter First Name">
+                    <input type="text" placeholder="Enter Last Name">
+                    <input type="text" placeholder="Enter Phone Number">
+                    <input type="email" placeholder="Enter Email ID"><br>
+                    <button class="btn">SIGN ME UP</button>
+                </div>
+                <h4 class="foot-title">INSPIRED BY SPORT, DESIGNED FOR LIFE</h4>
+
+                <div class="links flex">
+                    <a routerLink="/story" data-aos="fade-up">Terms & Condition</a>
+                    <a routerLink="/new-arrials" data-aos="fade-up">PRODUCTS</a>
+                    <a routerLink="/story" data-aos="fade-up">Privacy Policy</a>
+                </div>
+
+            </div>
+
+            <div class="social-icons">
+                <div class="address d-flex">
+                    <h3>Aurelia Moda</h3>
+                </div>
+                <h6>Developed By Aurelia Moda | All Rights Reserved @ 2024</h6>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/script.js"></script>
+
+</body>
+
+</html>

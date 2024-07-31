@@ -1,0 +1,399 @@
+@font-face {
+    font-family: myFontFam;
+    src: url(./font/EuclidFlexRegular.ttf);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: myFontFam;
+    font-weight: 400;
+}
+
+h1{
+    font-weight: 700;
+}
+h2{
+    font-weight: 600;
+}
+h3, h4{
+    font-weight: 500;
+}
+
+body{
+    background-color: #f5f5f51d;
+}
+
+li,a{
+    text-decoration: none;
+    list-style: none;
+    color: grey;
+}
+
+section{
+    padding: 2rem;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.nav-flex h2{
+    cursor: pointer;
+}
+
+.nav-icons{
+    display: flex;
+}
+
+.nav-icons div{
+    margin: 0 .2rem;
+}
+
+.new-sec p{
+    color: grey;
+}
+
+.nav-icons img{
+   margin: 0 .5rem;
+}
+
+.nav-icons span{
+    font-size: 1.2rem;
+    margin-top: -20px;
+}
+
+.nav-link li{
+   margin: 0 1rem;
+}
+
+.banner{
+    background-color: white;
+    padding: 1rem 2rem;
+    background-image: url(./img/kids.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.banner button{
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin-top: 1rem;
+}
+
+.product-cart span{
+    color: grey;
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+
+.new-sec{
+    text-align: center;
+}
+
+.new-sec p{
+    margin-top: 1rem;
+}
+
+.main{
+    padding-top: 2rem;
+}
+
+.product{
+    text-align: left;
+    width: 30%;
+}
+
+.product img{
+   border-radius: 20px;
+   width: 100%;
+   height: 500px;
+   object-fit: cover;
+}
+
+.product h4{
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.product a{
+    color: black;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.puzzle-design img{
+    width: 100%;
+}
+.mix-target img{
+    width: 300px;
+    height: auto;
+    object-position: top;
+}
+
+.product-cart{
+    display: flex;
+    justify-content:  space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.product-cart a{
+    width: 30%;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.filters{
+    width: 300px !important;
+}
+
+.filters h4{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.189);
+    margin-top: 1rem;
+    width: 250px;
+}
+
+.filter-btn, .sort-btn{
+    background-color: white;
+    color: black;
+    border: none;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.filter-btn:hover , .sort-btn:hover{
+   color: black;
+   transition: .3s;
+}
+
+.active{
+    color: black;
+}
+
+.checkbox{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    color: gray;
+}
+
+.checkbox input{
+    margin-right: 8px;
+}
+
+input[type="checkbox"]{
+    background-color: black;
+    accent-color: black;
+}
+
+.cart-value{
+    color: black;
+
+}
+
+.mix-target{
+    color: black;
+}
+
+.mix-target h3{
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 5px;
+    /* margin-top: -10px; */
+}
+
+.men-bg{
+    background-image: url(../assets/img/boys.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.men-bg span{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    font-weight: 300 !important;
+}
+
+.men-bg h5{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.men-bg button{
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+.footer{
+    overflow-x: hidden;
+    height:auto;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+.mail-section{
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    /* padding: 1rem 0; */
+    /* padding-bottom: 1rem; */
+}
+
+/* button{
+    padding: 10px 50px;
+} */
+
+.nav-links{
+    background-color: rgba(173, 173, 173, 0.139);
+    padding-bottom: 20px;
+}
+
+.star{
+    width: 30px;
+    object-fit: contain;
+}
+
+.mail-section h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px;
+}
+
+.mail-section h5{
+    font-size: 15px;
+    color: gray;
+}
+
+.mail-section button{
+    margin: 10px 0 30px 0;
+    font-size: 14px;
+}
+
+.btn-design, .btn{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.links{
+    margin: 30px 20px;
+    justify-content: space-around;
+}
+
+.links a{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-links img{
+    width: 16rem;
+    object-fit: contain;
+    margin: 2rem 0 10px 0 ;
+}
+
+.nav-links h4{
+    font-size: .8rem;
+}
+
+.social-icons div{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social-icons {
+    height: 50px;
+    margin: 30px;
+}
+.address h4{
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.foot-title{
+    margin-top: 4rem;
+}
+
+@media (max-width: 600px) {
+    .social-icons h6{
+        font-size: 12px;
+    }
+}
+
+.nav-link a:hover{
+    color: black;
+    transition: .3s;
+ }
+
+ .banner-head{
+    margin-left: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    /* margin-top: 2rem; */
+ }
+
+ .product-form input{
+    padding: 10px 2rem;
+    outline: none;
+    margin-top: 10px;
+    /* width: 50%; */
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    width: 40%;
+    font-size: 1rem;
+    background-color: rgba(219, 219, 219, 0.139);
+}
+
+.product-form h3{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.product-form{
+    margin: 2rem 0;
+}
+
+.btn{
+    position: absolute;
+    right: 4rem;
+}
