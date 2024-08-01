@@ -50,3 +50,7 @@ mixitup('#mix-wrapper', {
 
                 document.addEventListener('DOMContentLoaded', tick);
             })();
+
+            function forms2(){
+              alert("You are signed up. Congratulations")
+          }

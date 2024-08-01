@@ -37,58 +37,63 @@
     <section class="new-sec">
         <h2>NEW COLLECTION</h2>
         <p>Our latest collection, where classic and contemporary style coverage in <br>perfect harmony</p>
-        <div class="flex main">
-            <div class="product">
-                <img src="./assets/img/v2.png" alt="">
-                <h4>Everything you want to dive into</h4>
-                <p>Thoughtful designs we laboured over that are truly emblematic of our brand.</p>
-                <a href="">Shop Collection</a>
-            </div>
-            <div class="product">
-                <img src="./assets/img/v1.png" alt="">
-                <h4>FIND PERFECT LOOKS</h4>
-                <p>Effortless style that goes from bedroom to brunch and beyond.</p>
-                <a href="">Shop Collection</a>
-            </div>
-            <div class="product">
-                <img src="./assets/img/v3.png" alt="">
-                <h4>Bring home Serenity</h4>
-                <p>The Nostalgia-inducing classic is BACK.</p>
-                <a href="">Shop Collection</a>
-            </div>
+        <div class="flex main mobo-flex">
+            <a href="./w1.html">
+                <div class="product">
+                    <img src="./assets/img/v2.png" alt="">
+                    <h2>Women Fashions</h2>
+                    <h3><span>$35</span> $28</h3>
+                </div>
+            </a>
+            <a href="./product1.html">
+                <div class="product">
+                    <img src="./assets/img/v1.png" alt="">
+                    <h2>Men Fashions</h2>
+                    <h3><span>$35</span> $28</h3>
+                </div>
+            </a>
+            <a href="./u1.html ">
+                <div class="product">
+                    <img src="./assets/img/v3.png" alt="">
+                    <h2>Unisex</h2>
+                    <h3><span>$35</span> $28</h3>
+                </div>
+            </a>
+            
 
         </div>
 
     </section>
 
 
-    <section class="flex">
+    <section class="flex mobo-flex">
         <div class="filters">
             <h3>Filter Products</h3>
 
             <div class="category">
                 <h4>Category</h4>
                 <button class="filter-btn" data-filter="all">All</button> <br>
-                <button class="filter-btn" data-filter=".men">Men Fashion</button> <br>
-                <div class="checkbox filter-btn" data-filter=".t-shirt">
+                <button class="filter-btn" data-filter=".men">Men</button> <br>
+                <!-- <div class="checkbox filter-btn" data-filter=".t-shirt">
                     <input type="checkbox" placeholder="T-Shirt" name="T-Shirt" value="T-Shirt" id="Check1"
                         onclick="onlyThis(this.id)">
                     <label for="T-Shirt">T-Shirt</label>
-                </div>
-                <div class="checkbox filter-btn" data-filter=".shirt">
+                </div> -->
+                <!-- <div class="checkbox filter-btn" data-filter=".shirt">
                     <input type="checkbox" placeholder="Shirt" name="Shirt" value="Shirt" id="Check2"
                         onclick="onlyThis(this.id)">
                     <label for="Shirt">Shirt</label>
-                </div>
-                <script>
+                </div> -->
+                <!-- <script>
                     function onlyThis(id) {
                         for (var i = 1; i <= 2; i++) {
                             document.getElementById('Check' + i).checked = false
                         }
                         document.getElementById(id).checked = true
                     }
-                </script>
-                <button class="filter-btn" data-filter=".women">Women Fashion</button> <br>
+                </script> -->
+                <button class="filter-btn" data-filter=".women">Women </button> <br>
+                <button class="filter-btn" data-filter=".unisex">Unisex</button> <br>
                 <!-- <button class="filter-btn" data-filter=".decor">Decor</button> -->
             </div>
             <div class="order">
@@ -113,13 +118,13 @@
                 </div>
                 <h3><span>$33.3</span> $28.5</h3>
             </a>
-            <a href="./w1.html" class="mix-target footwear women" data-order="3" data-year="4">
+            <!-- <a href="./w1.html" class="mix-target footwear women" data-order="3" data-year="4">
                 <img src="./assets/women/w.png" alt="">
                 <div class="cart-value">
                     <h4>Feminine Buckle Ballerina Flats</h4>
                 </div>
                 <h3><span>$33.3</span> $28.5</h3>
-            </a>
+            </a> -->
             <a href="./product2.html" class="mix-target shirt men" data-order="11" data-year="4">
                 <img src="./assets/p2/p1.webp" alt="">
                 <div class="cart-value">
@@ -127,14 +132,14 @@
                 </div>
                 <h3><span>$35</span> $28</h3>
             </a>
-            <a href="./m2.html" class="mix-target hoodie men" data-order="5" data-year="4">
+            <!-- <a href="./m2.html" class="mix-target hoodie men" data-order="5" data-year="4">
                 <img src="./assets/men/m1.png" alt="">
                 <div class="cart-value">
                     <h4>Ralph lauen Double Knit Full Zip Hoodie</h4>
                 </div>
                 <h3><span>$33.3</span> $28.5</h3>
-            </a>
-            <a href="./w2.html" class="mix-target footwear women" data-order="3" data-year="4">
+            </a> -->
+            <a href="./w1.html" class="mix-target footwear women" data-order="3" data-year="4">
                 <img src="./assets/women/w1.png" alt="">
                 <div class="cart-value">
                     <h4>Feminine Buckle Ballerina Flats</h4>
@@ -148,7 +153,7 @@
                 </div>
                 <h3><span>$28</span> $22.5</h3>
             </a>
-            <a href="./m3.html" class="mix-target hoodie men" data-order="5" data-year="4">
+            <!-- <a href="./m3.html" class="mix-target hoodie men" data-order="5" data-year="4">
                 <img src="./assets/men/m2.png" alt="">
                 <div class="cart-value">
                     <h4>Ralph lauen Double Knit Full Zip Hoodie</h4>
@@ -161,16 +166,15 @@
                     <h4>Feminine Buckle Ballerina Flats</h4>
                 </div>
                 <h3><span>$33.3</span> $28.5</h3>
-            </a>
-            <a href="./product4.html" class="mix-target decor" data-order="7" data-year="4">
+            </a> -->
+            <!-- <a href="./product4.html" class="mix-target decor" data-order="7" data-year="4">
                 <img src="./assets/p4/p1.webp" alt="">
                 <div class="cart-value">
                     <h4>Sitara Tealight stand</h4>
-                    <!-- <img src="./assets/img/bag.png" alt=""> -->
                 </div>
                 <h3><span>$ 40</span> $36.2</h3>
-            </a>
-            <a href="./m4.html" class="mix-target hoodie men" data-order="5" data-year="4">
+            </a> -->
+            <!-- <a href="./m4.html" class="mix-target hoodie men" data-order="5" data-year="4">
                 <img src="./assets/men/m3.png" alt="">
                 <div class="cart-value">
                     <h4>Ralph lauen Double Knit Full Zip Hoodie</h4>
@@ -183,7 +187,7 @@
                     <h4>Feminine Buckle Ballerina Flats</h4>
                 </div>
                 <h3><span>$33.3</span> $28.5</h3>
-            </a>
+            </a> -->
             <a href="./product5.html" class="mix-target t-shirt men" data-order="6" data-year="4">
                 <img src="./assets/p5/p1.webp" alt="">
                 <div class="cart-value">
@@ -191,7 +195,7 @@
                 </div>
                 <h3><span>$33.3</span> $28.5</h3>
             </a>
-            <a href="./m5.html" class="mix-target hoodie men" data-order="5" data-year="4">
+            <!-- <a href="./m5.html" class="mix-target hoodie men" data-order="5" data-year="4">
                 <img src="./assets/men/m4.png" alt="">
                 <div class="cart-value">
                     <h4>Ralph lauen Double Knit Full Zip Hoodie</h4>
@@ -204,7 +208,7 @@
                     <h4>Feminine Buckle Ballerina Flats</h4>
                 </div>
                 <h3><span>$33.3</span> $28.5</h3>
-            </a>
+            </a> -->
             <a href="./product6.html" class="mix-target women top " data-order="8" data-year="4">
                 <img src="./assets/p6/p1.webp" alt="">
                 <div class="cart-value">
@@ -212,7 +216,7 @@
                 </div>
                 <h3><span>$25</span> $18</h3>
             </a>
-            <a href="./m6.html" class="mix-target hoodie men" data-order="5" data-year="4">
+            <!-- <a href="./m6.html" class="mix-target hoodie men" data-order="5" data-year="4">
                 <img src="./assets/men/m5.png" alt="">
                 <div class="cart-value">
                     <h4>Ralph lauen Double Knit Full Zip Hoodie</h4>
@@ -225,15 +229,15 @@
                     <h4>Feminine Buckle Ballerina Flats</h4>
                 </div>
                 <h3><span>$33.3</span> $28.5</h3>
-            </a>
-            <a href="./product7.html" class="mix-target decor" data-order="10" data-year="4">
+            </a> -->
+            <!-- <a href="./product7.html" class="mix-target decor" data-order="10" data-year="4">
                 <img src="./assets/p7/p1.webp" alt="">
                 <div class="cart-value">
                     <h4>Taramandai Sugar Pot & Creamer</h4>
                 </div>
                 <h3><span>$ 29.8</span> $22.5</h3>
-            </a>
-            <a href="./m7.html" class="mix-target hoodie men" data-order="5" data-year="4">
+            </a> -->
+            <!-- <a href="./m7.html" class="mix-target hoodie men" data-order="5" data-year="4">
                 <img src="./assets/men/m6.png" alt="">
                 <div class="cart-value">
                     <h4>Ralph lauen Double Knit Full Zip Hoodie</h4>
@@ -246,7 +250,7 @@
                     <h4>Feminine Buckle Ballerina Flats</h4>
                 </div>
                 <h3><span>$33.3</span> $28.5</h3>
-            </a>
+            </a> -->
             <a href="./product8.html" class="mix-target women top" data-order="4" data-year="4">
                 <img src="./assets/p8/p1.webp" alt="">
                 <div class=" cart-value">
@@ -255,7 +259,7 @@
                 </div>
                 <h3><span>$ 20</span> $15</h3>
             </a>
-            <a href="./m8.html" class="mix-target hoodie men" data-order="5" data-year="4">
+            <!-- <a href="./m8.html" class="mix-target hoodie men" data-order="5" data-year="4">
                 <img src="./assets/men/m7.png" alt="">
                 <div class="cart-value">
                     <h4>Ralph lauen Double Knit Full Zip Hoodie</h4>
@@ -268,26 +272,34 @@
                     <h4>Feminine Buckle Ballerina Flats</h4>
                 </div>
                 <h3><span>$33.3</span> $28.5</h3>
-            </a>
-            <a href="./product9.html" class="mix-target decor" data-order="8" data-year="4">
+            </a> -->
+            <!-- <a href="./product9.html" class="mix-target decor" data-order="8" data-year="4">
                 <img src="./assets/p9/p1.webp" alt="">
                 <div class=" cart-value">
                     <h4>Safari Cloche</h4>
 
                 </div>
                 <h3><span>$60</span> $50</h3>
-            </a>
-            <a href="./m9.html" class="mix-target hoodie men" data-order="5" data-year="4">
+            </a> -->
+            <!-- <a href="./m9.html" class="mix-target hoodie men" data-order="5" data-year="4">
                 <img src="./assets/men/m8.png" alt="">
                 <div class="cart-value">
                     <h4>Ralph lauen Double Knit Full Zip Hoodie</h4>
                 </div>
                 <h3><span>$33.3</span> $28.5</h3>
-            </a>
+            </a> -->
             <a href="./product10.html" class="mix-target women top" data-order="3" data-year="4">
                 <img src="./assets/p10/p1.webp" alt="">
                 <div class=" cart-value">
                     <h4>Gina Layered Dress - Stone & Ivory</h4>
+
+                </div>
+                <h3><span>$29</span> $25</h3>
+            </a>
+            <a href="./u1.html" class="mix-target unisex" data-order="2" data-year="4">
+                <img src="./assets/unisex/b1.png" alt="">
+                <div class=" cart-value">
+                    <h4>Gabor women's leather shoes</h4>
 
                 </div>
                 <h3><span>$29</span> $25</h3>
@@ -300,13 +312,33 @@
                 </div>
                 <h3><span>$38.4</span> $32.4</h3>
             </a>
+            <a href="./u2.html" class="mix-target unisex" data-order="2" data-year="4">
+                <img src="./assets/unisex/c1.png" alt="">
+                <div class=" cart-value">
+                    <h4>Fendi Hatin White</h4>
+                </div>
+                <h3><span>$12</span> $18</h3>
+            </a>
             <a href="./product11.html" class="mix-target shirt men" data-order="1" data-year="4">
                 <img src="./assets/p12/p1.webp" alt="">
                 <div class=" cart-value">
                     <h4>Black denim shirt</h4>
-
                 </div>
                 <h3><span>$24.55</span> $20.99</h3>
+            </a>
+            <a href="./u3.html" class="mix-target unisex" data-order="2" data-year="4">
+                <img src="./assets/unisex/u1.png" alt="">
+                <div class=" cart-value">
+                    <h4>Gabor women's leather shoes</h4>
+                </div>
+                <h3><span>$120</span> $140</h3>
+            </a>
+            <a href="./u4.html" class="mix-target unisex" data-order="2" data-year="4">
+                <img src="./assets/unisex/w1.png" alt="">
+                <div class=" cart-value">
+                    <h4>Nike AIR FORCE Sneaker</h4>
+                </div>
+                <h3><span>$320</span> $370</h3>
             </a>
         </div>
     </section>
@@ -315,10 +347,6 @@
             to Cambodia!</span>
         <h5>We choose a mindful material library for a collection that's <br>
             with colors and prints that reference Combodia</h5>
-        <div class="btn-flex">
-            <button>SHOP SERENITY</button>
-            <button>SHOP MEN</button>
-        </div>
     </div>
 
     <div class="footer">
@@ -327,18 +355,16 @@
                 <img src="../../../assets/bg/footer.png" alt="">
                 <div class="product-form">
                     <h3>Sign up to get 30% OFF</h3>
-                    <input type="text" placeholder="Enter First Name">
-                    <input type="text" placeholder="Enter Last Name">
-                    <input type="text" placeholder="Enter Phone Number">
-                    <input type="email" placeholder="Enter Email ID"><br>
-                    <button class="btn">SIGN ME UP</button>
+                    <input type="text" placeholder="Enter First Name" required><br>
+                    <input type="text" placeholder="Enter Last Name" required><br>
+                    <input type="email" placeholder="Enter Email ID" required><br>
+                    <input type="text" placeholder="Enter Phone Number" required><br>
+                    <button class="btn" onclick="forms2()">SIGN ME UP</button>
                 </div>
-                <h4 class="foot-title">INSPIRED BY SPORT, DESIGNED FOR LIFE</h4>
 
                 <div class="links flex">
-                    <a routerLink="/story" data-aos="fade-up">Terms & Condition</a>
-                    <a routerLink="/new-arrials" data-aos="fade-up">PRODUCTS</a>
-                    <a routerLink="/story" data-aos="fade-up">Privacy Policy</a>
+                    <a href="./terms.html" data-aos="fade-up">Terms & Condition</a>
+                    <a href="./privacy.html" data-aos="fade-up">Privacy Policy</a>
                 </div>
 
             </div>

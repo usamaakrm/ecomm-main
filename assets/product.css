@@ -25,6 +25,10 @@ li,a{
     color: black;
 }
 
+.nav-flex h4{
+    font-size: 1.5rem;
+}
+
 .nav-icons a{
     padding: 10px 20px;
     background-color: black;
@@ -74,7 +78,7 @@ strong{
 #main{
     border-radius: 10px;
     margin: 10px;
-    width: 500px;
+    width: 100%;
 }
 
 .product-flex{
@@ -134,6 +138,17 @@ strong{
 }
 .color-3{
     background-color: white;
+}
+
+.color-6{
+    background-color: red;
+    
+}
+.color-4{
+    background-color: brown;
+}
+.color-5{
+    background-color: pink;
 }
 
 .size{
@@ -386,4 +401,15 @@ strong{
 .product-form{
     margin: 2rem 0;
     text-align: center;
+}
+
+@media screen and (max-width: 650px){
+    .nav-flex{
+        justify-content: center;
+    }
+
+    .product-flex{
+        flex-direction: column;
+        padding: 0;
+    }
 }
