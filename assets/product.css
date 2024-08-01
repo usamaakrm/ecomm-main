@@ -410,6 +410,10 @@ strong{
         padding: 2rem 0;
     }
 
+    body{
+        overflow-x: hidden;
+    }
+
     .product-flex{
         flex-direction: column;
         padding: 0;
@@ -468,5 +472,14 @@ strong{
 
     .nav-links  input{
        width: 80%;
+    }
+
+    .picture{
+        width: 100%;
+
+    }
+
+    #main{
+        width: 350px;
     }
 }
