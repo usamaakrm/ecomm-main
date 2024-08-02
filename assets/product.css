@@ -9,8 +9,12 @@
   }
 
   body{
-    background-color: #f5f5f51d;
+    background-color: white;
     font-family: myFontFam;
+}
+
+.nav-icons{
+    display: none;
 }
 
 .nav-flex{
