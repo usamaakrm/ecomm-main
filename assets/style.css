@@ -425,7 +425,7 @@ input[type="checkbox"]{
     margin: 10px;
     border-radius: 10px;
     border: 1px solid grey;
-    width: 40%;
+    width: 80%;
     font-size: 1rem;
     background-color: rgba(219, 219, 219, 0.139);
 }
@@ -491,4 +491,12 @@ input[type="checkbox"]{
         border-radius: 5px;
         padding: 5px;
     }
+
+    .log{
+        margin-left: 1rem !important;
+    }
+
+    .product img{
+        height: 100%;
+     }
 }
