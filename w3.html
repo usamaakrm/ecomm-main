@@ -101,14 +101,20 @@
                 </div>
             </div>
             <div class="btn-details">
-                <button>Order and Save 80%</button>
-                <div class="product-form">
+                <button onclick="myFun()">Order and Save 80%</button>
+                <div class="product-form" id="sam">
                     <input type="text" placeholder="Enter First Name">
                     <input type="text" placeholder="Enter Last Name">
                     <input type="text" placeholder="Enter Phone Number">
                     <input type="email" placeholder="Enter Email ID">
                     <button>Sign Now</button>
                 </div>
+                <script>
+                    function myFun(){
+                        let x = document.getElementById('sam')
+                            x.style.display = "block"
+                    }
+                </script>
                 <p>90-day money-back guarantee</p>
                 <div class="prodt-content">
                     <p>The Double Knit Full Zip Hoodie has been the perfect combination of comfort and style since its
@@ -268,9 +274,8 @@
         })();
 
 
-        var thumbnails = document.getElementById("thumbnails")
-        var imgs = thumbnails.getElementsByTagName("img")
-        var main = document.getElementById("main")
+        var imgs = document.getElementById("left-circle")
+        var main = document.getElementById("img-holder")
         var counter = 0;
 
         for (let i = 0; i < imgs.length; i++) {

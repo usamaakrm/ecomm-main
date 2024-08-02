@@ -33,12 +33,37 @@
 
     <div class="product-flex">
         <div class="picture">
-            <img src="./assets/unisex/c1.png" id="main">
-            <div id="thumbnails">
-                <img src="./assets/unisex/c1.png">
-                <img src="./assets/unisex/c2.png">
-                <img src="./assets/unisex/c3.png">
-                <img src="./assets/unisex/c4.png">
+            <div class="column-9 main-img-9">
+                <div id="img-holder"></div>
+            </div>
+            <div class="preview" id="Thumbnails">
+                <div><img
+                        onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/c1.png)'"
+                        src="./assets/unisex/c1.png" id="left-circle">
+                </div>
+                <div><img
+                        onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/c2.png)'"
+                        src="./assets/unisex/c2.png" id="left-circle">
+                </div>
+                <div><img
+                        onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/c3.png)'"
+                        src="./assets/unisex/c3.png" id="left-circle">
+                </div>
+                <div><img
+                        onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/c4.png)'"
+                        src="./assets/unisex/c4.png" id="left-circle">
+                </div>
+                <style>
+                    #img-holder {
+                        background-image: url('./assets/unisex/c1.png');
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 80vh;
+                    }
+                </style>
+
             </div>
         </div>
         <div class="content">
@@ -82,13 +107,27 @@
             <div class="text"></div>
             <div  class="color-cont">
                 <p>Color:</p>
-                <div class="color" >
-                    <div class="color-1" onclick="progress(18)"></div>
-                    <div class="color-2" onclick="progress(40)" >
+                <div class="colors">
+                    <div class="preview" >
+                        <div onclick="progress(18)"><img
+                                onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/c1.png)'"
+                                src="./assets/unisex/c1.png" id="left-circle">
+                        </div>
+                        
+                        
                     </div>
-                    <div class="color-3" onclick="progress(86)"></div>
                 </div>
             </div>
+            <style>
+                #img-holder {
+                    background-image: url('./assets/unisex/c1.png');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 80vh;
+                }
+            </style>
             <div class="size-cont">
                 <p>Size:</p>
                 <div class="size">
@@ -99,14 +138,20 @@
                 </div>
             </div>
             <div class="btn-details">
-                <button>Order and Save 80%</button>
-                <!-- <div class="product-form">
+                <button onclick="myFun()">Order and Save 80%</button>
+                <div class="product-form" id="sam">
                     <input type="text" placeholder="Enter First Name">
                     <input type="text" placeholder="Enter Last Name">
                     <input type="text" placeholder="Enter Phone Number">
                     <input type="email" placeholder="Enter Email ID">
                     <button>Sign Now</button>
-                </div> -->
+                </div>
+                <script>
+                    function myFun(){
+                        let x = document.getElementById('sam')
+                            x.style.display = "block"
+                    }
+                </script>
                 <p>90-day money-back guarantee</p>
                 <div class="prodt-content">
                     <p>The Double Knit Full Zip Hoodie has been the perfect combination of comfort and style since its
@@ -266,9 +311,8 @@
         })();
 
 
-        var thumbnails = document.getElementById("thumbnails")
-        var imgs = thumbnails.getElementsByTagName("img")
-        var main = document.getElementById("main")
+        var imgs = document.getElementById("left-circle")
+        var main = document.getElementById("img-holder")
         var counter = 0;
 
         for (let i = 0; i < imgs.length; i++) {

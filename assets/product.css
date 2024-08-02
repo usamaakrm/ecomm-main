@@ -64,15 +64,22 @@ strong{
     color: rgb(230, 191, 130);
 }
 
-#thumbnails img{
+.preview img{
     width: 80px;
     height: 80px;
     border-radius: 5px;
     margin: 10px;
 }
 
-#thumbnails{
+.preview {
     display: flex;
+    width: 100%;
+    overflow-x: auto;
+}
+
+#Thumbnails{
+    display: flex;
+    justify-content: center !important;
 }
 
 #main{
@@ -88,7 +95,7 @@ strong{
 }
 
 .picture{
-    width: 30%;
+    width: 50%;
 }
 
 .content{
@@ -205,6 +212,7 @@ strong{
     width: 0%;
     border-radius: 10px;
     transition: all 1s;
+    /* position: absolute; */
   }
 
   .btn-details button{
@@ -482,4 +490,8 @@ strong{
     #main{
         width: 350px;
     }
+}
+
+.product-form{
+    display: none;
 }
