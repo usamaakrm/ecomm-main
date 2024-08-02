@@ -10,56 +10,137 @@
 </head>
 
 <body>
-    <div class="offers">
-        <h5><strong>The Sales end's in</strong>
-
-            Guaranteed Free Shipping
-
-            <span id="time"></span>
-            <span id="time2"></span>
-            <span id="time3"></span>
-        </h5>
-    </div>
-    <nav class="nav-flex">
-        <div>
-            <a href="./index.html">
-                <h4>Aurelia Moda</h4>
-            </a>
+    <div class="containers">
+        <div class="offers">
+            <h5><strong>The Sales end's in</strong>
+    
+                Guaranteed Free Shipping
+    
+                <span id="time"></span>
+                <span id="time2"></span>
+                <span id="time3"></span>
+            </h5>
         </div>
-        <div class="nav-icons">
-            <a href="">ADD TO CART</a>
-        </div>
-    </nav>
-
-    <div class="product-flex">
-        <div class="picture">
-            <div class="column-9 main-img-9">
-                <div id="img-holder"></div>
+        <nav class="nav-flex">
+            <div>
+                <a href="./index.html">
+                    <h4>Aurelia Moda</h4>
+                </a>
             </div>
-            <div class="preview" id="Thumbnails">
-                <div><img
-                        onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u1.png)'"
-                        src="./assets/unisex/u1.png" id="left-circle">
+            <div class="nav-icons">
+                <a href="">ADD TO CART</a>
+            </div>
+        </nav>
+    
+        <div class="product-flex">
+            <div class="picture">
+                <div class="column-9 main-img-9">
+                    <div id="img-holder"></div>
                 </div>
-                <div><img
-                        onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u2.png)'"
-                        src="./assets/unisex/u2.png" id="left-circle">
+                <div class="preview" id="Thumbnails">
+                    <div><img
+                            onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u1.png)'"
+                            src="./assets/unisex/u1.png" id="left-circle">
+                    </div>
+                    <div><img
+                            onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u2.png)'"
+                            src="./assets/unisex/u2.png" id="left-circle">
+                    </div>
+                    <div><img
+                            onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u3.png)'"
+                            src="./assets/unisex/u3.png" id="left-circle">
+                    </div>
+                    <div><img
+                            onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u4.png)'"
+                            src="./assets/unisex/u4.png" id="left-circle">
+                    </div>
+                    <div><img
+                            onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/file (1) copy.png)'"
+                            src="./assets/unisex/file (1) copy.png" id="left-circle">
+                    </div>
+                    <style>
+                        #img-holder {
+                            background-image: url('./assets/unisex/u1.png');
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            width: 100%;
+                            height: 80vh;
+                        }
+                    </style>
+    
                 </div>
-                <div><img
-                        onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u3.png)'"
-                        src="./assets/unisex/u3.png" id="left-circle">
+            </div>
+            <div class="content">
+                <div class="flex rate">
+                    <img src="/assets/img/ratings.svg" alt="" width="100px">
+    
+                    <h5>9,543 ratings</h5>
                 </div>
-                <div><img
-                        onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u4.png)'"
-                        src="./assets/unisex/u4.png" id="left-circle">
+                <h1 class="prod-head">Gabor women's leather shoes</h1>
+                <h3 class="prices">$ 28.5 <span class="prices2">$ 34.5</span></h3>
+                <hr>
+                <div>
+                    <div class="flex item-col ">
+                        <div>
+                            <img src="./assets/img/delivery.webp" alt="" width="20px">
+                        </div>
+                        <div>
+                            <p>Free shipping within 48 hours</p>
+                        </div>
+                    </div>
+                    <div class="flex item-col">
+                        <div>
+                            <img src="./assets/img/verified.webp" alt="" width="20px">
+                        </div>
+                        <div>
+                            <p>Shipped from Paris, FR</p>
+                        </div>
+                    </div>
+                    <div class="flex item-col">
+                        <div>
+                            <img src="./assets/img/retun.svg" alt="" width="20px">
+                        </div>
+                        <div>
+                            <p>Free 30-day return</p>
+                        </div>
+                    </div>
                 </div>
-                <div><img
-                        onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/file (1) copy.png)'"
-                        src="./assets/unisex/file (1) copy.png" id="left-circle">
+                <div class="container">
+                    <div class="progressed"></div>
+                </div>
+                <div class="text"></div>
+                <div class="color-cont">
+                    <p>Color:</p>
+                    <div class="colors">
+                        <div class="preview">
+                            <div onclick="progress(38)"><img
+                                    onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u1.png)'"
+                                    src="./assets/unisex/u1.png" id="left-circle">
+                            </div>
+                            <div onclick="progress(42)"><img
+                                    onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u2.png)'"
+                                    src="./assets/unisex/u2.png" id="left-circle">
+                            </div>
+                            <div onclick="progress(22)"><img
+                                    onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u3.png)'"
+                                    src="./assets/unisex/u3.png" id="left-circle">
+                            </div>
+                            <div onclick="progress(32)"><img
+                                    onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u4.png)'"
+                                    src="./assets/unisex/u4.png" id="left-circle">
+                            </div>
+                            <div><img
+                                onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/file (1) copy.png)'"
+                                src="./assets/unisex/file (1) copy.png" id="left-circle">
+                        </div>
+    
+                        </div>
+                    </div>
                 </div>
                 <style>
                     #img-holder {
-                        background-image: url('./assets/unisex/u1.png');
+                        background-image: url('./assets/unisex/file (1) copy.png');
                         background-position: center;
                         background-size: contain;
                         background-repeat: no-repeat;
@@ -67,252 +148,173 @@
                         height: 80vh;
                     }
                 </style>
-
+                <div class="size-cont">
+                    <p>Size:</p>
+                    <div class="size">
+                        <div class="size-1" onclick="progress(23)">7</div>
+                        <div class="size-2" onclick="progress(10)">8</div>
+                        <div class="size-3" onclick="progress(60)">9</div>
+                        <div class="size-4" onclick="progress(32)">10</div>
+                        <div class="size-5" onclick="progress(39)">11</div>
+                        <div class="size-6" onclick="progress(21)">12</div>
+                        <div class="size-7" onclick="progress(57)">13</div>
+                        <div class="size-8" onclick="progress(47)">14</div>
+                    </div>
+                </div>
+                <div class="btn-details">
+                    <button>Order and Save 80%</button>
+                    <div class="product-form" id="sam">
+                        <form  onsubmit="return validate()">
+                            <input type="text" placeholder="Enter First Name" required>
+                            <input type="text" placeholder="Enter Last Name" required><br>
+                            <input type="email" placeholder="Enter Email ID" id="email" required>
+                            <input type="number" placeholder="Enter Phone Number" id="phone" required><br>
+                            <button class="btn">SIGN ME UP</button>
+                        </form>
+                            
+                    </div>
+                    <script>
+                        function myFun(){
+                            let x = document.getElementById('sam')
+                                x.style.display = "block"
+                        }
+    
+                        function validate(){
+                            var email = document.getElementById('email').value
+                            var phone = document.getElementById('phone').value
+                            if(phone.length <= 9 || email.length <= 6){
+                                alert("invalid data")
+                                return false
+                            }
+                            else{
+                                alert("You are signed up. Congratulations")
+                            }
+                        }
+                    </script>
+                    <p>90-day money-back guarantee</p>
+                    <div class="prodt-content">
+                        <p>The Double Knit Full Zip Hoodie has been the perfect combination of comfort and style since its
+                            inception. Designed by Ralph Lauren, this iconic hoodie offers timeless elegance paired with
+                            impeccable quality, setting an unrivalled standard of sophistication.
+    
+                        </p>
+                        <h3>Characteristics:</h3>
+                        <h4>Ultimate Comfort: </h4>
+                        <p>Made from a premium double knit, this hoodie offers an incomparable softness to the touch,
+                            ensuring optimal comfort throughout the day.</p>
+                        <h4>Practical Design:</h4>
+                        <p>Featuring a full-length front zipper and an adjustable hood with drawstring, this hoodie offers
+                            exceptional versatility and practicality.</p>
+                        <h4>Refined Details:</h4>
+                        <p>Long sleeves with ribbed cuffs provide a comfortable and stylish fit, while the slit kangaroo
+                            pocket adds a touch of functionality and style.</p>
+                        <h4>Iconic Embroidery:</h4>
+                        <p>Featuring the famous pony logo embroidered on the left chest, this hoodie is a testament to its
+                            authenticity and iconic heritage.</p>
+                        <h4>Simplified maintenance:</h4>
+                        <p>Machine washable for maximum convenience, this hoodie is ready to wear anytime, whether it's for
+                            a casual day or a night out with friends.
+    
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="content">
-            <div class="flex rate">
-                <img src="/assets/img/ratings.svg" alt="" width="100px">
-
-                <h5>9,543 ratings</h5>
+        <div class="main-content">
+            <div class="rewies">
+                <h3>90-day money-back guarantee</h3>
+                <p>
+                    Vous n'êtes pas satisfait à 100 % de votre commande ? Nous faisons tout notre possible pour résoudre le
+                    problème. Profitez de notre garantie de remboursement de 90 jours, sans poser de questions, et essayez
+                    notre
+                    produit sans souci.
+                </p>
+    
             </div>
-            <h1 class="prod-head">Gabor women's leather shoes</h1>
-            <h3 class="prices">$ 28.5 <span class="prices2">$ 34.5</span></h3>
-            <hr>
+            <h3 class="clients">Ne nous croyez pas sur parole, laissez parler nos clients !</h3>
+            <div class="comments-container">
+                <div class="comments">
+                    <div class="rat-star">
+                        <span class="btn-headline"
+                            style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★ ★ ★
+                            ★ ★</span>
+                    </div>
+                    <div>
+                        <h3>Alain J.</h3>
+                        <img src="./assets/img/French flag png.webp" alt="" width="20">
+                        <p>Beau sweat à capuche en coton de bonne qualité. S'adapte comme promis et est plus beau que son
+                            homologue Hollister. Il a l'air plus élégant lorsque l'on croise des collègues. Prix ​​élevé
+                            mais c'est bien sur le vrai RL</p>
+                    </div>
+                </div>
+                <div class="comments">
+                    <div class="rat-star">
+                        <span class="btn-headline"
+                            style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★ ★ ★
+                            ★ ★</span>
+                    </div>
+                    <div>
+                        <h3>Charles M.</h3>
+                        <img src="./assets/img/French flag png.webp" alt="" width="20">
+                        <p>S'adapte très bien et j'adore la sensation. Le seul inconvénient était le prix</p>
+                    </div>
+                </div>
+                <div class="comments">
+                    <div class="rat-star">
+                        <span class="btn-headline"
+                            style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★ ★ ★
+                            ★ ★</span>
+                    </div>
+                    <div>
+                        <h3>Lucas B.</h3>
+                        <img src="./assets/img/French flag png.webp" alt="" width="20">
+                        <p>Sweat-shirt super doux. Ligne ajustée et couleur magnifique</p>
+                    </div>
+                </div>
+                <div class="comments">
+                    <div class="rat-star">
+                        <span class="btn-headline"
+                            style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★ ★ ★
+                            ★ ★</span>
+                    </div>
+                    <div>
+                        <h3>Gabriel W.</h3>
+                        <img src="./assets/img/French flag png.webp" alt="" width="20">
+                        <p>J'ai vraiment aimé la couleur et une fois que j'ai reçu la chemise, elle est tout aussi superbe.
+                            Je prends un grand et il me va parfaitement et est très confortable. Très satisfait de la
+                            qualité de la chemise et du toucher.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer">
             <div>
-                <div class="flex item-col ">
-                    <div>
-                        <img src="./assets/img/delivery.webp" alt="" width="20px">
-                    </div>
-                    <div>
-                        <p>Free shipping within 48 hours</p>
-                    </div>
-                </div>
-                <div class="flex item-col">
-                    <div>
-                        <img src="./assets/img/verified.webp" alt="" width="20px">
-                    </div>
-                    <div>
-                        <p>Shipped from Paris, FR</p>
-                    </div>
-                </div>
-                <div class="flex item-col">
-                    <div>
-                        <img src="./assets/img/retun.svg" alt="" width="20px">
-                    </div>
-                    <div>
-                        <p>Free 30-day return</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="progressed"></div>
-            </div>
-            <div class="text"></div>
-            <div class="color-cont">
-                <p>Color:</p>
-                <div class="colors">
-                    <div class="preview">
-                        <div onclick="progress(38)"><img
-                                onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u1.png)'"
-                                src="./assets/unisex/u1.png" id="left-circle">
-                        </div>
-                        <div onclick="progress(42)"><img
-                                onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u2.png)'"
-                                src="./assets/unisex/u2.png" id="left-circle">
-                        </div>
-                        <div onclick="progress(22)"><img
-                                onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u3.png)'"
-                                src="./assets/unisex/u3.png" id="left-circle">
-                        </div>
-                        <div onclick="progress(32)"><img
-                                onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u4.png)'"
-                                src="./assets/unisex/u4.png" id="left-circle">
-                        </div>
-                        <div><img
-                            onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/file (1) copy.png)'"
-                            src="./assets/unisex/file (1) copy.png" id="left-circle">
-                    </div>
-
-                    </div>
-                </div>
-            </div>
-            <style>
-                #img-holder {
-                    background-image: url('./assets/unisex/file (1) copy.png');
-                    background-position: center;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    width: 100%;
-                    height: 80vh;
-                }
-            </style>
-            <div class="size-cont">
-                <p>Size:</p>
-                <div class="size">
-                    <div class="size-1" onclick="progress(23)">7</div>
-                    <div class="size-2" onclick="progress(10)">8</div>
-                    <div class="size-3" onclick="progress(60)">9</div>
-                    <div class="size-4" onclick="progress(32)">10</div>
-                    <div class="size-5" onclick="progress(39)">11</div>
-                    <div class="size-6" onclick="progress(21)">12</div>
-                    <div class="size-7" onclick="progress(57)">13</div>
-                    <div class="size-8" onclick="progress(47)">14</div>
-                </div>
-            </div>
-            <div class="btn-details">
-                <button>Order and Save 80%</button>
-                <div class="product-form" id="sam">
-                    <form  onsubmit="return validate()">
-                        <input type="text" placeholder="Enter First Name" required>
+                <div class="nav-links">
+                    <img src="../../../assets/bg/footer.png" alt="">
+                    <div class="product-form">
+                        <h3>Sign up to get 30% OFF</h3>
+                        <input type="text" placeholder="Enter First Name" required><br>
                         <input type="text" placeholder="Enter Last Name" required><br>
-                        <input type="email" placeholder="Enter Email ID" id="email" required>
-                        <input type="number" placeholder="Enter Phone Number" id="phone" required><br>
-                        <button class="btn">SIGN ME UP</button>
-                    </form>
-                        
+                        <input type="email" placeholder="Enter Email ID" required><br>
+                        <input type="text" placeholder="Enter Phone Number" required><br>
+                        <button class="btn" onclick="forms2()">SIGN ME UP</button>
+                    </div>
+    
+                    <div class="links flex">
+                        <a href="./terms.html" data-aos="fade-up">Terms & Condition</a>
+                        <a href="./privacy.html" data-aos="fade-up">Privacy Policy</a>
+                    </div>
+    
                 </div>
-                <script>
-                    function myFun(){
-                        let x = document.getElementById('sam')
-                            x.style.display = "block"
-                    }
-
-                    function validate(){
-                        var email = document.getElementById('email').value
-                        var phone = document.getElementById('phone').value
-                        if(phone.length <= 9 || email.length <= 6){
-                            alert("invalid data")
-                            return false
-                        }
-                        else{
-                            alert("You are signed up. Congratulations")
-                        }
-                    }
-                </script>
-                <p>90-day money-back guarantee</p>
-                <div class="prodt-content">
-                    <p>The Double Knit Full Zip Hoodie has been the perfect combination of comfort and style since its
-                        inception. Designed by Ralph Lauren, this iconic hoodie offers timeless elegance paired with
-                        impeccable quality, setting an unrivalled standard of sophistication.
-
-                    </p>
-                    <h3>Characteristics:</h3>
-                    <h4>Ultimate Comfort: </h4>
-                    <p>Made from a premium double knit, this hoodie offers an incomparable softness to the touch,
-                        ensuring optimal comfort throughout the day.</p>
-                    <h4>Practical Design:</h4>
-                    <p>Featuring a full-length front zipper and an adjustable hood with drawstring, this hoodie offers
-                        exceptional versatility and practicality.</p>
-                    <h4>Refined Details:</h4>
-                    <p>Long sleeves with ribbed cuffs provide a comfortable and stylish fit, while the slit kangaroo
-                        pocket adds a touch of functionality and style.</p>
-                    <h4>Iconic Embroidery:</h4>
-                    <p>Featuring the famous pony logo embroidered on the left chest, this hoodie is a testament to its
-                        authenticity and iconic heritage.</p>
-                    <h4>Simplified maintenance:</h4>
-                    <p>Machine washable for maximum convenience, this hoodie is ready to wear anytime, whether it's for
-                        a casual day or a night out with friends.
-
-                    </p>
+    
+                <div class="social-icons">
+                    <div class="address d-flex">
+                        <h3>Aurelia Moda</h3>
+                    </div>
+                    <h6>Developed By Aurelia Moda | All Rights Reserved @ 2024</h6>
+    
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="main-content">
-        <div class="rewies">
-            <h3>90-day money-back guarantee</h3>
-            <p>
-                Vous n'êtes pas satisfait à 100 % de votre commande ? Nous faisons tout notre possible pour résoudre le
-                problème. Profitez de notre garantie de remboursement de 90 jours, sans poser de questions, et essayez
-                notre
-                produit sans souci.
-            </p>
-
-        </div>
-        <h3 class="clients">Ne nous croyez pas sur parole, laissez parler nos clients !</h3>
-        <div class="comments-container">
-            <div class="comments">
-                <div class="rat-star">
-                    <span class="btn-headline"
-                        style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★ ★ ★
-                        ★ ★</span>
-                </div>
-                <div>
-                    <h3>Alain J.</h3>
-                    <img src="./assets/img/French flag png.webp" alt="" width="20">
-                    <p>Beau sweat à capuche en coton de bonne qualité. S'adapte comme promis et est plus beau que son
-                        homologue Hollister. Il a l'air plus élégant lorsque l'on croise des collègues. Prix ​​élevé
-                        mais c'est bien sur le vrai RL</p>
-                </div>
-            </div>
-            <div class="comments">
-                <div class="rat-star">
-                    <span class="btn-headline"
-                        style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★ ★ ★
-                        ★ ★</span>
-                </div>
-                <div>
-                    <h3>Charles M.</h3>
-                    <img src="./assets/img/French flag png.webp" alt="" width="20">
-                    <p>S'adapte très bien et j'adore la sensation. Le seul inconvénient était le prix</p>
-                </div>
-            </div>
-            <div class="comments">
-                <div class="rat-star">
-                    <span class="btn-headline"
-                        style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★ ★ ★
-                        ★ ★</span>
-                </div>
-                <div>
-                    <h3>Lucas B.</h3>
-                    <img src="./assets/img/French flag png.webp" alt="" width="20">
-                    <p>Sweat-shirt super doux. Ligne ajustée et couleur magnifique</p>
-                </div>
-            </div>
-            <div class="comments">
-                <div class="rat-star">
-                    <span class="btn-headline"
-                        style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★ ★ ★
-                        ★ ★</span>
-                </div>
-                <div>
-                    <h3>Gabriel W.</h3>
-                    <img src="./assets/img/French flag png.webp" alt="" width="20">
-                    <p>J'ai vraiment aimé la couleur et une fois que j'ai reçu la chemise, elle est tout aussi superbe.
-                        Je prends un grand et il me va parfaitement et est très confortable. Très satisfait de la
-                        qualité de la chemise et du toucher.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <div>
-            <div class="nav-links">
-                <img src="../../../assets/bg/footer.png" alt="">
-                <div class="product-form">
-                    <h3>Sign up to get 30% OFF</h3>
-                    <input type="text" placeholder="Enter First Name" required><br>
-                    <input type="text" placeholder="Enter Last Name" required><br>
-                    <input type="email" placeholder="Enter Email ID" required><br>
-                    <input type="text" placeholder="Enter Phone Number" required><br>
-                    <button class="btn" onclick="forms2()">SIGN ME UP</button>
-                </div>
-
-                <div class="links flex">
-                    <a href="./terms.html" data-aos="fade-up">Terms & Condition</a>
-                    <a href="./privacy.html" data-aos="fade-up">Privacy Policy</a>
-                </div>
-
-            </div>
-
-            <div class="social-icons">
-                <div class="address d-flex">
-                    <h3>Aurelia Moda</h3>
-                </div>
-                <h6>Developed By Aurelia Moda | All Rights Reserved @ 2024</h6>
-
             </div>
         </div>
     </div>
