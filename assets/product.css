@@ -403,12 +403,17 @@ strong{
     margin-top: 10px;
     border: 1px solid black;
     width: 40%;
+    border-radius: 5px;
     margin: 10px;
 }
 
 .product-form{
     margin: 2rem 0;
     text-align: center;
+}
+
+.btn{
+    width: 40% !important;
 }
 
 @media screen and (max-width: 650px){

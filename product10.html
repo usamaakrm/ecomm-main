@@ -133,16 +133,31 @@
             <div class="btn-details">
                 <button onclick="myFun()">Order and Save 80%</button>
                 <div class="product-form" id="sam">
-                    <input type="text" placeholder="Enter First Name">
-                    <input type="text" placeholder="Enter Last Name">
-                    <input type="text" placeholder="Enter Phone Number">
-                    <input type="email" placeholder="Enter Email ID">
-                    <button>Sign Now</button>
+                    <form  onsubmit="return validate()">
+                        <input type="text" placeholder="Enter First Name" required>
+                        <input type="text" placeholder="Enter Last Name" required><br>
+                        <input type="email" placeholder="Enter Email ID" id="email" required>
+                        <input type="number" placeholder="Enter Phone Number" id="phone" required><br>
+                        <button class="btn">SIGN ME UP</button>
+                    </form>
+                        
                 </div>
                 <script>
                     function myFun(){
                         let x = document.getElementById('sam')
                             x.style.display = "block"
+                    }
+
+                    function validate(){
+                        var email = document.getElementById('email').value
+                        var phone = document.getElementById('phone').value
+                        if(phone.length <= 9 || email.length <= 6){
+                            alert("invalid data")
+                            return false
+                        }
+                        else{
+                            alert("You are signed up. Congratulations")
+                        }
                     }
                 </script>
                 <p>90-day money-back guarantee</p>
