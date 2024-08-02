@@ -340,8 +340,13 @@ strong{
 }
 
 .size div:hover{
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(227, 227, 227);
     transition: .3s;
+    border: 2px solid black;
+}
+
+.size div{
+    border: 2px solid grey;
 }
 
 .mail-section button{
