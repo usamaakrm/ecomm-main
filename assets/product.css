@@ -446,16 +446,24 @@ strong{
 
     .nav-flex{
         justify-content: space-between;
-        padding: 2rem 0;
+        padding: 2rem 20px;
     }
 
     body{
         overflow-x: hidden;
+        width: 100%;
+    }
+
+    .containers{
+        width: 100% !important;
+         margin: 0 !important;
+        padding: 0 !important; 
     }
 
     .product-flex{
         flex-direction: column;
-        padding: 0;
+        padding: 0px !important;
+        overflow-x: hidden;
     }
 
     #thumbnails{
@@ -468,8 +476,9 @@ strong{
     }
 
     .content{
-        width: 100%;
-        padding: 1rem 0;
+        width: 95%;
+        padding: 1rem 10px;
+        overflow-x: hidden;
     }
 
     .content div{
@@ -491,9 +500,18 @@ strong{
         text-align: justify;
     }
 
+    .rewies{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .rewies h3{
+      padding: 2rem 0;
+    }
+
     .rewies p{
        padding: 0 5px;
-       margin-top: 1rem;
+       margin-top: .5rem;
     }
 
     .main-content{
@@ -524,6 +542,10 @@ strong{
 
     .product-form input{
         width: 90%;
+    }
+
+    #Thumbnails div{
+        margin-left: 30px;
     }
 }
 
