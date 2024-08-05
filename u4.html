@@ -13,13 +13,9 @@
 <body>
    <div class="containers">
     <div class="offers">
-        <h5><strong>The Sales end's in</strong>
+        <h5>
 
-            Guaranteed Free Shipping
-
-            <span id="time"></span>
-            <span id="time2"></span>
-            <span id="time3"></span>
+            Store Closing in <span id="time2"></span> Minutes - Everything Must Go! Guaranteed Free Shipping on All Orders!
         </h5>
     </div>
     <nav class="nav-flex">
@@ -108,7 +104,7 @@
                 <p>Color:</p>
                 <div class="colors">
                     <div class="preview">
-                        <div onclick="progress(38)"><img
+                        <div onclick="progress(8)"><img
                                 onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/w1.png)'"
                                 src="./assets/unisex/w1.png" id="left-circle">
                         </div>
@@ -129,20 +125,20 @@
             <div class="size-cont">
                 <p>Size:</p>
                 <div class="size">
-                    <div class="size-1" onclick="progress(23)">7</div>
-                    <div class="size-2" onclick="progress(10)">8</div>
-                    <div class="size-3" onclick="progress(60)">9</div>
-                    <div class="size-4" onclick="progress(32)">10</div>
-                    <div class="size-5" onclick="progress(39)">11</div>
-                    <div class="size-6" onclick="progress(21)">12</div>
-                    <div class="size-7" onclick="progress(57)">13</div>
-                    <div class="size-8" onclick="progress(47)">14</div>
+                    <div class="size-1" onclick="progress(3)">7</div>
+                    <div class="size-2" onclick="progress(1)">8</div>
+                    <div class="size-3" onclick="progress(6)">9</div>
+                    <div class="size-4" onclick="progress(2)">10</div>
+                    <div class="size-5" onclick="progress(9)">11</div>
+                    <div class="size-6" onclick="progress(2)">12</div>
+                    <div class="size-7" onclick="progress(7)">13</div>
+                    <div class="size-8" onclick="progress(4)">14</div>
                 </div>
             </div>
             <div class="btn-details">
                 <button onclick="myFun()">Order and Save 80%</button>
                 <div class="product-form" id="sam">
-                    <form  onsubmit="return validate()">
+                    <form  onsubmit="return validate()" target="_blank" action="https://www.google.com" >
                         <input type="text" placeholder="Enter First Name" required>
                         <input type="text" placeholder="Enter Last Name" required><br>
                         <input type="email" placeholder="Enter Email ID" id="email" required>
@@ -163,9 +159,6 @@
                         if(phone.length <= 9 || email.length <= 6){
                             alert("invalid data")
                             return false
-                        }
-                        else{
-                            alert("You are signed up. Congratulations")
                         }
                     }
                 </script>
@@ -315,12 +308,8 @@
                 var hh = pad((remain / 60 / 60) % 60);
                 var mm = pad((remain / 60) % 60);
                 var ss = pad(remain % 60);
-                document.getElementById('time').innerHTML =
-                    hh;
                 document.getElementById('time2').innerHTML =
                     + mm;
-                document.getElementById('time3').innerHTML =
-                    + ss;
 
                 setTimeout(tick, 1000);
             }
@@ -360,7 +349,7 @@
             }, 20);
         }
 
-        progress(23)
+        progress(5)
     </script>
 </body>
 

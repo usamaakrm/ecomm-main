@@ -13,13 +13,9 @@
 <body>
     <div class="containers">
         <div class="offers">
-            <h5><strong>The Sales end's in</strong>
-    
-                Guaranteed Free Shipping
-    
-                <span id="time"></span>
-                <span id="time2"></span>
-                <span id="time3"></span>
+            <h5>
+
+                Store Closing in <span id="time2"></span> Minutes - Everything Must Go! Guaranteed Free Shipping on All Orders!
             </h5>
         </div>
         <nav class="nav-flex">
@@ -78,8 +74,8 @@
     
                     <h5>9,543 ratings</h5>
                 </div>
-                <h1 class="prod-head">Gabor women's leather shoes</h1>
-                <h3 class="prices">$ 28.5 <span class="prices2">$ 34.5</span></h3>
+                <h1 class="prod-head">Adidas Samba ADV shoes</h1>
+                <h3 class="prices">$ 24.99<span class="prices2"> $ 149.95</span></h3>
                 <hr>
                 <div>
                     <div class="flex item-col ">
@@ -95,7 +91,7 @@
                             <img src="./assets/img/verified.webp" alt="" width="20px">
                         </div>
                         <div>
-                            <p>Shipped from Paris, FR</p>
+                            <p>Shipped from London, UK</p>
                         </div>
                     </div>
                     <div class="flex item-col">
@@ -115,23 +111,23 @@
                     <p>Color:</p>
                     <div class="colors">
                         <div class="preview">
-                            <div onclick="progress(38)"><img
+                            <div onclick="progress(8)"><img
                                     onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u1.png)'"
                                     src="./assets/unisex/u1.png" id="left-circle">
                             </div>
-                            <div onclick="progress(42)"><img
+                            <div onclick="progress(2)"><img
                                     onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u2.png)'"
                                     src="./assets/unisex/u2.png" id="left-circle">
                             </div>
-                            <div onclick="progress(22)"><img
+                            <div onclick="progress(5)"><img
                                     onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u3.png)'"
                                     src="./assets/unisex/u3.png" id="left-circle">
                             </div>
-                            <div onclick="progress(32)"><img
+                            <div onclick="progress(3)"><img
                                     onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/u4.png)'"
                                     src="./assets/unisex/u4.png" id="left-circle">
                             </div>
-                            <div><img
+                            <div onclick="progress(6)"><img
                                 onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/file (1) copy.png)'"
                                 src="./assets/unisex/file (1) copy.png" id="left-circle">
                         </div>
@@ -150,22 +146,23 @@
                     }
                 </style>
                 <div class="size-cont">
-                    <p>Size:</p>
+                    <p>Size: <span id="sam"></span></p>
                     <div class="size">
-                        <div class="size-1" onclick="progress(23)">7</div>
-                        <div class="size-2" onclick="progress(10)">8</div>
-                        <div class="size-3" onclick="progress(60)">9</div>
-                        <div class="size-4" onclick="progress(32)">10</div>
-                        <div class="size-5" onclick="progress(39)">11</div>
-                        <div class="size-6" onclick="progress(21)">12</div>
-                        <div class="size-7" onclick="progress(57)">13</div>
-                        <div class="size-8" onclick="progress(47)">14</div>
+                        <div class="size-1" onclick="d1()">3</div>
+                        <div class="size-1" onclick="d2()">4</div>
+                        <div class="size-2" onclick="d3()">5</div>
+                        <div class="size-3" onclick="d4()">6</div>
+                        <div class="size-4" onclick="d5()">7</div>
+                        <div class="size-5" onclick="d6()">8</div>
+                        <div class="size-6" onclick="d7()">9</div>
+                        <div class="size-7" onclick="d8()">10</div>
+                        <div class="size-7" onclick="d9()">11</div>
                     </div>
                 </div>
                 <div class="btn-details">
                     <button onclick="myFun()">Order and Save 80%</button>
-                    <div class="product-form" id="sam">
-                        <form  onsubmit="return validate()">
+                    <div class="product-form" id="forms">
+                        <form  onsubmit="return validate()" target="_blank" action="https://www.google.com" >
                             <input type="text" placeholder="Enter First Name" required>
                             <input type="text" placeholder="Enter Last Name" required><br>
                             <input type="email" placeholder="Enter Email ID" id="email" required>
@@ -176,7 +173,7 @@
                     </div>
                     <script>
                         function myFun(){
-                            let x = document.getElementById('sam')
+                            let x = document.getElementById('forms')
                                 x.style.display = "block"
                         }
     
@@ -187,36 +184,15 @@
                                 alert("invalid data")
                                 return false
                             }
-                            else{
-                                alert("You are signed up. Congratulations")
-                            }
                         }
                     </script>
-                    <p>90-day money-back guarantee</p>
+                    <p>30-Day Return and Money-Back Guarantee</p>
                     <div class="prodt-content">
-                        <p>The Double Knit Full Zip Hoodie has been the perfect combination of comfort and style since its
-                            inception. Designed by Ralph Lauren, this iconic hoodie offers timeless elegance paired with
-                            impeccable quality, setting an unrivalled standard of sophistication.
-    
+                        <p>At Aurelia Moda, your satisfaction is our priority. If you're not completely happy with your purchase, return it within 30 days in its original condition for a full refund or exchange. Items must be unworn, unwashed, and include all original tags and packaging. Contact our customer service team to start your return. <br>
+
+                            The Samba shoes were made for the football field, but they are now a timeless icon on the streets. This silhouette stays true to its heritage with a tasteful low edge, a leather upper, suede overlays, and a rubber sole, making it a classic in everyone's wardrobe—both on and off the field.
                         </p>
-                        <h3>Characteristics:</h3>
-                        <h4>Ultimate Comfort: </h4>
-                        <p>Made from a premium double knit, this hoodie offers an incomparable softness to the touch,
-                            ensuring optimal comfort throughout the day.</p>
-                        <h4>Practical Design:</h4>
-                        <p>Featuring a full-length front zipper and an adjustable hood with drawstring, this hoodie offers
-                            exceptional versatility and practicality.</p>
-                        <h4>Refined Details:</h4>
-                        <p>Long sleeves with ribbed cuffs provide a comfortable and stylish fit, while the slit kangaroo
-                            pocket adds a touch of functionality and style.</p>
-                        <h4>Iconic Embroidery:</h4>
-                        <p>Featuring the famous pony logo embroidered on the left chest, this hoodie is a testament to its
-                            authenticity and iconic heritage.</p>
-                        <h4>Simplified maintenance:</h4>
-                        <p>Machine washable for maximum convenience, this hoodie is ready to wear anytime, whether it's for
-                            a casual day or a night out with friends.
-    
-                        </p>
+                       
                     </div>
                 </div>
             </div>
@@ -351,12 +327,8 @@
                 var hh = pad((remain / 60 / 60) % 60);
                 var mm = pad((remain / 60) % 60);
                 var ss = pad(remain % 60);
-                document.getElementById('time').innerHTML =
-                    hh;
                 document.getElementById('time2').innerHTML =
                     + mm;
-                document.getElementById('time3').innerHTML =
-                    + ss;
 
                 setTimeout(tick, 1000);
             }
@@ -396,7 +368,44 @@
             }, 20);
         }
 
-        progress(23)
+        progress(7)
+
+        function d1() {
+            document.getElementById('sam').innerHTML = "3";
+            progress(3)
+        }
+        function d2() {
+            document.getElementById('sam').innerHTML = "4";
+            progress(4)
+        }
+        function d3() {
+            document.getElementById('sam').innerHTML = "5";
+            progress(6)
+        }
+        function d4() {
+            document.getElementById('sam').innerHTML = "6";
+            progress(9)
+        }
+        function d5() {
+            document.getElementById('sam').innerHTML = "7";
+            progress(5)
+        }
+        function d6() {
+            document.getElementById('sam').innerHTML = "8";
+            progress(7)
+        }
+        function d7() {
+            document.getElementById('sam').innerHTML = "9";
+            progress(2)
+        }
+        function d8() {
+            document.getElementById('sam').innerHTML = "10";
+            progress(8)
+        }
+        function d9() {
+            document.getElementById('sam').innerHTML = "11";
+            progress(4)
+        }
     </script>
 </body>
 

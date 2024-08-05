@@ -13,13 +13,9 @@
 <body>
     <div class="containers">
         <div class="offers">
-            <h5><strong>The Sales end's in</strong>
-    
-                Guaranteed Free Shipping
-    
-                <span id="time"></span>
-                <span id="time2"></span>
-                <span id="time3"></span>
+            <h5>
+
+                Store Closing in <span id="time2"></span> Minutes - Everything Must Go! Guaranteed Free Shipping on All Orders!
             </h5>
         </div>
         <nav class="nav-flex">
@@ -74,8 +70,8 @@
     
                     <h5>9,543 ratings</h5>
                 </div>
-                <h1 class="prod-head">Fendi Hatin White</h1>
-                <h3 class="prices">$ 28.5 <span class="prices2">$ 34.5</span></h3>
+                <h1 class="prod-head">Fendi Beige Pequin canvas baseball cap</h1>
+                <h3 class="prices">$ 74.99 <span class="prices2"> $ 399.95</span></h3>
                 <hr>
                 <div>
                     <div class="flex item-col ">
@@ -91,7 +87,7 @@
                             <img src="./assets/img/verified.webp" alt="" width="20px">
                         </div>
                         <div>
-                            <p>Shipped from Paris, FR</p>
+                            <p>Shipped from London, UK</p>
                         </div>
                     </div>
                     <div class="flex item-col">
@@ -111,7 +107,7 @@
                     <p>Color:</p>
                     <div class="colors">
                         <div class="preview" >
-                            <div onclick="progress(18)"><img
+                            <div onclick="progress(8)"><img
                                     onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/c1.png)'"
                                     src="./assets/unisex/c1.png" id="left-circle">
                             </div>
@@ -131,18 +127,23 @@
                     }
                 </style>
                 <div class="size-cont">
-                    <p>Size:</p>
+                    <p>Size: <span id="sam"></span></p>
                     <div class="size">
-                        <div class="size-1" onclick="progress(23)">S</div>
-                        <div class="size-2" onclick="progress(10)">M</div>
-                        <div class="size-3" onclick="progress(60)">L</div>
-                        <div class="size-4" onclick="progress(32)">XL</div>
+                        <div class="size-1" onclick="d1()">XXS</div>
+                        <div class="size-1" onclick="d2()">XS</div>
+                        <div class="size-2" onclick="d3()">S</div>
+                        <div class="size-3" onclick="d4()">M</div>
+                        <div class="size-4" onclick="d5()">L</div>
+                        <div class="size-5" onclick="d6()">XL</div>
+                        <div class="size-6" onclick="d7()">2XL</div>
+                        <div class="size-7" onclick="d8()">3XL</div>
+                        <div class="size-7" onclick="d9()">4XL</div>
                     </div>
                 </div>
                 <div class="btn-details">
                     <button onclick="myFun()">Order and Save 80%</button>
-                    <div class="product-form" id="sam">
-                        <form  onsubmit="return validate()">
+                    <div class="product-form" id="forms">
+                        <form  onsubmit="return validate()" target="_blank" action="https://www.google.com" >
                             <input type="text" placeholder="Enter First Name" required>
                             <input type="text" placeholder="Enter Last Name" required><br>
                             <input type="email" placeholder="Enter Email ID" id="email" required>
@@ -153,7 +154,7 @@
                     </div>
                     <script>
                         function myFun(){
-                            let x = document.getElementById('sam')
+                            let x = document.getElementById('forms')
                                 x.style.display = "block"
                         }
     
@@ -164,36 +165,18 @@
                                 alert("invalid data")
                                 return false
                             }
-                            else{
-                                alert("You are signed up. Congratulations")
-                            }
                         }
                     </script>
                     <p>90-day money-back guarantee</p>
                     <div class="prodt-content">
-                        <p>The Double Knit Full Zip Hoodie has been the perfect combination of comfort and style since its
-                            inception. Designed by Ralph Lauren, this iconic hoodie offers timeless elegance paired with
-                            impeccable quality, setting an unrivalled standard of sophistication.
-    
+                        <p>At Aurelia Moda, your satisfaction is our priority. If you're not completely happy with your purchase, return it within 30 days in its original condition for a full refund or exchange. Items must be unworn, unwashed, and include all original tags and packaging. Contact our customer service team to start your return. <br>
+                        <br>  <br>  Baseball cap with semi-stiff peak. Made of canvas with iconic beige Pequin stripes. Customised with brown Fendi lettering embroidered on the front. Adjustable strap at the back with a gold-finish metal buckle.
+
+                          <br> <br> Made in Italy <br> <br>
+                            
+                            Composition: 100%cotton, 100%cotton
                         </p>
-                        <h3>Characteristics:</h3>
-                        <h4>Ultimate Comfort: </h4>
-                        <p>Made from a premium double knit, this hoodie offers an incomparable softness to the touch,
-                            ensuring optimal comfort throughout the day.</p>
-                        <h4>Practical Design:</h4>
-                        <p>Featuring a full-length front zipper and an adjustable hood with drawstring, this hoodie offers
-                            exceptional versatility and practicality.</p>
-                        <h4>Refined Details:</h4>
-                        <p>Long sleeves with ribbed cuffs provide a comfortable and stylish fit, while the slit kangaroo
-                            pocket adds a touch of functionality and style.</p>
-                        <h4>Iconic Embroidery:</h4>
-                        <p>Featuring the famous pony logo embroidered on the left chest, this hoodie is a testament to its
-                            authenticity and iconic heritage.</p>
-                        <h4>Simplified maintenance:</h4>
-                        <p>Machine washable for maximum convenience, this hoodie is ready to wear anytime, whether it's for
-                            a casual day or a night out with friends.
-    
-                        </p>
+                        
                     </div>
                 </div>
             </div>
@@ -315,12 +298,8 @@
                 var hh = pad((remain / 60 / 60) % 60);
                 var mm = pad((remain / 60) % 60);
                 var ss = pad(remain % 60);
-                document.getElementById('time').innerHTML =
-                    hh;
                 document.getElementById('time2').innerHTML =
                     + mm;
-                document.getElementById('time3').innerHTML =
-                    + ss;
 
                 setTimeout(tick, 1000);
             }
@@ -360,7 +339,44 @@
             }, 20);
         }
 
-        progress(23)
+        progress(5)
+
+        function d1() {
+            document.getElementById('sam').innerHTML = "XXS";
+            progress(3)
+        }
+        function d2() {
+            document.getElementById('sam').innerHTML = "XS";
+            progress(4)
+        }
+        function d3() {
+            document.getElementById('sam').innerHTML = "S";
+            progress(6)
+        }
+        function d4() {
+            document.getElementById('sam').innerHTML = "M";
+            progress(9)
+        }
+        function d5() {
+            document.getElementById('sam').innerHTML = "L";
+            progress(5)
+        }
+        function d6() {
+            document.getElementById('sam').innerHTML = "XL";
+            progress(7)
+        }
+        function d7() {
+            document.getElementById('sam').innerHTML = "2XL";
+            progress(2)
+        }
+        function d8() {
+            document.getElementById('sam').innerHTML = "3XL";
+            progress(8)
+        }
+        function d9() {
+            document.getElementById('sam').innerHTML = "4XL";
+            progress(4)
+        }
     </script>
 </body>
 

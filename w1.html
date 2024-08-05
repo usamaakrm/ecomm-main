@@ -13,13 +13,10 @@
 <body>
     <div class="containers">
         <div class="offers">
-            <h5><strong>The Sales end's in</strong>
-    
-                Guaranteed Free Shipping
-    
-                <span id="time"></span>
-                <span id="time2"></span>
-                <span id="time3"></span>
+            <h5>
+
+                Store Closing in <span id="time2"></span> Minutes - Everything Must Go! Guaranteed Free Shipping on All
+                Orders!
             </h5>
         </div>
         <nav class="nav-flex">
@@ -32,7 +29,7 @@
                 <a href="">ADD TO CART</a>
             </div>
         </nav>
-    
+
         <div class="product-flex">
             <div class="picture">
                 <div class="column-9 main-img-9">
@@ -77,17 +74,17 @@
                             height: 80vh;
                         }
                     </style>
-    
+
                 </div>
             </div>
             <div class="content">
                 <div class="flex rate">
                     <img src="/assets/img/ratings.svg" alt="" width="100px">
-    
+
                     <h5>9,543 ratings</h5>
                 </div>
-                <h1 class="prod-head">Feminine Buckle Ballerina Flats</h1>
-                <h3 class="prices">$ 28.5 <span class="prices2">$ 34.5</span></h3>
+                <h1 class="prod-head">Ganni Buckle Ballerina Patent Croco Black</h1>
+                <h3 class="prices">$ 99.95 <span class="prices2">  $ 365</span></h3>
                 <hr>
                 <div>
                     <div class="flex item-col ">
@@ -103,7 +100,7 @@
                             <img src="./assets/img/verified.webp" alt="" width="20px">
                         </div>
                         <div>
-                            <p>Shipped from Paris, FR</p>
+                            <p>Shipped from London, UK</p>
                         </div>
                     </div>
                     <div class="flex item-col">
@@ -123,23 +120,23 @@
                     <p>Color:</p>
                     <div class="colors">
                         <div class="preview">
-                            <div onclick="progress(28)"><img
+                            <div onclick="progress(8)"><img
                                     onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/women/w1.png)'"
                                     src="./assets/women/w1.png" id="left-circle">
                             </div>
-                            <div onclick="progress(23)"><img
+                            <div onclick="progress(3)"><img
                                     onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/women/w2.png)'"
                                     src="./assets/women/w2.png" id="left-circle">
                             </div>
-                            <div onclick="progress(32)"><img
+                            <div onclick="progress(2)"><img
                                     onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/women/w3.png)'"
                                     src="./assets/women/w3.png" id="left-circle">
                             </div>
-                            <div onclick="progress(18)"><img
+                            <div onclick="progress(1)"><img
                                     onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/women/w4.png)'"
                                     src="./assets/women/w4.png" id="left-circle">
                             </div>
-                            <div onclick="progress(43)"><img
+                            <div onclick="progress(4)"><img
                                     onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/women/w5.png)'"
                                     src="./assets/women/w5.png" id="left-circle">
                             </div>
@@ -151,7 +148,7 @@
                                     onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/women/w7.png)'"
                                     src="./assets/women/w7.png" id="left-circle">
                             </div> -->
-    
+
                         </div>
                     </div>
                 </div>
@@ -166,72 +163,65 @@
                     }
                 </style>
                 <div class="size-cont">
-                    <p>Size:</p>
+                    <p>Size: <span id="sam"></span></p>
                     <div class="size">
-                        <div class="size-1" onclick="progress(23)">XS</div>
-                        <div class="size-2" onclick="progress(10)">S</div>
-                        <div class="size-3" onclick="progress(60)">M</div>
-                        <div class="size-4" onclick="progress(32)">L</div>
-                        <div class="size-5" onclick="progress(39)">XL</div>
-                        <div class="size-6" onclick="progress(21)">2XL</div>
-                        <div class="size-7" onclick="progress(57)">3XL</div>
+                        <div class="size-1" onclick="d1()">3</div>
+                        <div class="size-1" onclick="d2()">4</div>
+                        <div class="size-2" onclick="d3()">5</div>
+                        <div class="size-3" onclick="d4()">6</div>
+                        <div class="size-4" onclick="d5()">7</div>
+                        <div class="size-5" onclick="d6()">8</div>
+                        <div class="size-6" onclick="d7()">9</div>
+                        <div class="size-7" onclick="d8()">10</div>
+                        <div class="size-7" onclick="d9()">11</div>
                     </div>
                 </div>
                 <div class="btn-details">
                     <button onclick="myFun()">Order and Save 80%</button>
-                    <div class="product-form" id="sam">
-                        <form  onsubmit="return validate()">
+                    <div class="product-form" id="forms">
+                        <form onsubmit="return validate()" target="_blank" action="https://www.google.com">
                             <input type="text" placeholder="Enter First Name" required>
                             <input type="text" placeholder="Enter Last Name" required><br>
                             <input type="email" placeholder="Enter Email ID" id="email" required>
                             <input type="number" placeholder="Enter Phone Number" id="phone" required><br>
                             <button class="btn">SIGN ME UP</button>
                         </form>
-                            
+
                     </div>
                     <script>
-                        function myFun(){
-                            let x = document.getElementById('sam')
-                                x.style.display = "block"
+                        function myFun() {
+                            let x = document.getElementById('forms')
+                            x.style.display = "block"
                         }
-    
-                        function validate(){
+
+                        function validate() {
                             var email = document.getElementById('email').value
                             var phone = document.getElementById('phone').value
-                            if(phone.length <= 9 || email.length <= 6){
+                            if (phone.length <= 9 || email.length <= 6) {
                                 alert("invalid data")
                                 return false
                             }
-                            else{
-                                alert("You are signed up. Congratulations")
-                            }
                         }
                     </script>
-                    <p>90-day money-back guarantee</p>
+                    <p>30-Day Return and Money-Back Guarantee</p>
                     <div class="prodt-content">
-                        <p>The Double Knit Full Zip Hoodie has been the perfect combination of comfort and style since its
-                            inception. Designed by Ralph Lauren, this iconic hoodie offers timeless elegance paired with
-                            impeccable quality, setting an unrivalled standard of sophistication.
-    
+                        <p>At Aurelia Moda, your satisfaction is our priority. If you're not completely happy with your
+                            purchase, return it within 30 days in its original condition for a full refund or exchange.
+                            Items must be unworn, unwashed, and include all original tags and packaging. Contact our
+                            customer service team to start your return. <br>
+                            Ganni Buckle Ballerina Patent Croco Black <br>
+                            Slingback strap <br>
+                            Pointed toe <br>
+                            Two gold-colored buckles with hole details <br>
+                            Block heels <br> <br>
+                            Size Guide: <br>
+                            Choose your usual size. If you are between sizes, we recommend the smaller one. <br> <br>
+
+                            Material: <br>
+                            52% recycled leather, 27% polyester, 21% polyurethane <br>
+                            Lining: 76% polyurethane, 24% viscose
                         </p>
-                        <h3>Characteristics:</h3>
-                        <h4>Ultimate Comfort: </h4>
-                        <p>Made from a premium double knit, this hoodie offers an incomparable softness to the touch,
-                            ensuring optimal comfort throughout the day.</p>
-                        <h4>Practical Design:</h4>
-                        <p>Featuring a full-length front zipper and an adjustable hood with drawstring, this hoodie offers
-                            exceptional versatility and practicality.</p>
-                        <h4>Refined Details:</h4>
-                        <p>Long sleeves with ribbed cuffs provide a comfortable and stylish fit, while the slit kangaroo
-                            pocket adds a touch of functionality and style.</p>
-                        <h4>Iconic Embroidery:</h4>
-                        <p>Featuring the famous pony logo embroidered on the left chest, this hoodie is a testament to its
-                            authenticity and iconic heritage.</p>
-                        <h4>Simplified maintenance:</h4>
-                        <p>Machine washable for maximum convenience, this hoodie is ready to wear anytime, whether it's for
-                            a casual day or a night out with friends.
-    
-                        </p>
+
                     </div>
                 </div>
             </div>
@@ -240,25 +230,29 @@
             <div class="rewies">
                 <h3>90-day money-back guarantee</h3>
                 <p>
-                    Vous n'êtes pas satisfait à 100 % de votre commande ? Nous faisons tout notre possible pour résoudre le
-                    problème. Profitez de notre garantie de remboursement de 90 jours, sans poser de questions, et essayez
+                    Vous n'êtes pas satisfait à 100 % de votre commande ? Nous faisons tout notre possible pour résoudre
+                    le
+                    problème. Profitez de notre garantie de remboursement de 90 jours, sans poser de questions, et
+                    essayez
                     notre
                     produit sans souci.
                 </p>
-    
+
             </div>
             <h3 class="clients">Ne nous croyez pas sur parole, laissez parler nos clients !</h3>
             <div class="comments-container">
                 <div class="comments">
                     <div class="rat-star">
                         <span class="btn-headline"
-                            style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★ ★ ★
+                            style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★
+                            ★ ★
                             ★ ★</span>
                     </div>
                     <div>
                         <h3>Alain J.</h3>
                         <img src="./assets/img/French flag png.webp" alt="" width="20">
-                        <p>Beau sweat à capuche en coton de bonne qualité. S'adapte comme promis et est plus beau que son
+                        <p>Beau sweat à capuche en coton de bonne qualité. S'adapte comme promis et est plus beau que
+                            son
                             homologue Hollister. Il a l'air plus élégant lorsque l'on croise des collègues. Prix ​​élevé
                             mais c'est bien sur le vrai RL</p>
                     </div>
@@ -266,7 +260,8 @@
                 <div class="comments">
                     <div class="rat-star">
                         <span class="btn-headline"
-                            style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★ ★ ★
+                            style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★
+                            ★ ★
                             ★ ★</span>
                     </div>
                     <div>
@@ -278,7 +273,8 @@
                 <div class="comments">
                     <div class="rat-star">
                         <span class="btn-headline"
-                            style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★ ★ ★
+                            style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★
+                            ★ ★
                             ★ ★</span>
                     </div>
                     <div>
@@ -290,20 +286,22 @@
                 <div class="comments">
                     <div class="rat-star">
                         <span class="btn-headline"
-                            style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★ ★ ★
+                            style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★
+                            ★ ★
                             ★ ★</span>
                     </div>
                     <div>
                         <h3>Gabriel W.</h3>
                         <img src="./assets/img/French flag png.webp" alt="" width="20">
-                        <p>J'ai vraiment aimé la couleur et une fois que j'ai reçu la chemise, elle est tout aussi superbe.
+                        <p>J'ai vraiment aimé la couleur et une fois que j'ai reçu la chemise, elle est tout aussi
+                            superbe.
                             Je prends un grand et il me va parfaitement et est très confortable. Très satisfait de la
                             qualité de la chemise et du toucher.</p>
                     </div>
                 </div>
             </div>
         </div>
-    
+
         <div class="footer">
             <div>
                 <div class="nav-links">
@@ -316,20 +314,20 @@
                         <input type="text" placeholder="Enter Phone Number" required><br>
                         <button class="btn" onclick="forms2()">SIGN ME UP</button>
                     </div>
-    
+
                     <div class="links flex">
                         <a href="./terms.html" data-aos="fade-up">Terms & Condition</a>
                         <a href="./privacy.html" data-aos="fade-up">Privacy Policy</a>
                     </div>
-    
+
                 </div>
-    
+
                 <div class="social-icons">
                     <div class="address d-flex">
                         <h3>Aurelia Moda</h3>
                     </div>
                     <h6>Developed By Aurelia Moda | All Rights Reserved @ 2024</h6>
-    
+
                 </div>
             </div>
         </div>
@@ -366,12 +364,8 @@
                 var hh = pad((remain / 60 / 60) % 60);
                 var mm = pad((remain / 60) % 60);
                 var ss = pad(remain % 60);
-                document.getElementById('time').innerHTML =
-                    hh;
                 document.getElementById('time2').innerHTML =
                     + mm;
-                document.getElementById('time3').innerHTML =
-                    + ss;
 
                 setTimeout(tick, 1000);
             }
@@ -411,7 +405,44 @@
             }, 20);
         }
 
-        progress(23)
+        progress(8)
+
+        function d1() {
+            document.getElementById('sam').innerHTML = "3";
+            progress(3)
+        }
+        function d2() {
+            document.getElementById('sam').innerHTML = "4";
+            progress(4)
+        }
+        function d3() {
+            document.getElementById('sam').innerHTML = "5";
+            progress(6)
+        }
+        function d4() {
+            document.getElementById('sam').innerHTML = "6";
+            progress(9)
+        }
+        function d5() {
+            document.getElementById('sam').innerHTML = "7";
+            progress(5)
+        }
+        function d6() {
+            document.getElementById('sam').innerHTML = "8";
+            progress(7)
+        }
+        function d7() {
+            document.getElementById('sam').innerHTML = "9";
+            progress(2)
+        }
+        function d8() {
+            document.getElementById('sam').innerHTML = "10";
+            progress(8)
+        }
+        function d9() {
+            document.getElementById('sam').innerHTML = "11";
+            progress(4)
+        }
     </script>
 </body>
 
