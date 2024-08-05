@@ -552,3 +552,7 @@ strong{
 .product-form{
     display: none;
 }
+
+.edit-w1 img{
+   object-fit: contain !important;
+}
