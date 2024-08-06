@@ -562,7 +562,7 @@ strong{
     }
 
     .offers2 span{
-        padding: .5rem ;
+        padding: .3rem .5rem ;
         border-radius: 5px;
         background-color: white;
         color: black !important;
@@ -573,15 +573,16 @@ strong{
         text-align: center;
         color: white;
         background-color: black;
-        padding: 1rem;
+        padding: 1rem 20px;
         font-weight: 300;
         display: block !important;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     /* .prod-head{
         font-size: 2rem;
     } */
+
 
    
 }
