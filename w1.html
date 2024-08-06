@@ -15,8 +15,13 @@
         <div class="offers">
             <h5>
 
-                Store Closing in <span id="time2"></span> Minutes - Everything Must Go! Guaranteed Free Shipping on All
-                Orders!
+                Store Closing in <span id="time2"></span> Minutes - Everything Must Go! Guaranteed Free Shipping on All Orders!
+            </h5>
+        </div>
+        <div class="offers2">
+            <h5>
+
+                Store Closing in <span id="time3"></span> Minutes. Free Shipping!
             </h5>
         </div>
         <nav class="nav-flex">
@@ -362,6 +367,8 @@
                 var mm = pad((remain / 60) % 60);
                 var ss = pad(remain % 60);
                 document.getElementById('time2').innerHTML =
+                    + mm;
+                document.getElementById('time3').innerHTML =
                     + mm;
 
                 setTimeout(tick, 1000);

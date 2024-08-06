@@ -547,8 +547,37 @@ strong{
     #Thumbnails div{
         margin-left: 30px;
     }
+
+    #img-holder{
+        height: 200px !important;
+        position: relative;
+    }
+
+    .offers2 span{
+        padding: .5rem ;
+        border-radius: 5px;
+        background-color: white;
+        color: black !important;
+        margin: 0 .5rem;
+    }
+    
+    .offers2{
+        text-align: center;
+        color: white;
+        background-color: black;
+        padding: 1rem;
+        font-weight: 300;
+        display: block !important;
+        font-size: 1.2rem;
+    }
+
+
+    
 }
 
+.offers2{
+    display: none;
+}
 .product-form{
     display: none;
 }
