@@ -626,6 +626,7 @@ strong{
 
     .payment{
         margin-top: 1rem;
+        border-radius: 10px;
     }
 
     .review-cont{
