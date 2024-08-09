@@ -233,15 +233,15 @@ strong{
   }
 
   .btn-details button{
-    background-color: black;
-    color: white;
+    background-color: #289414;
+    color: black;
     width: 100%;
     border: none;
     padding: 15px;
     border-radius: 10px;
     font-size: 1rem;
     margin-top: 1rem;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .btn-details p{
@@ -597,3 +597,66 @@ strong{
 .edit-w1 img{
    object-fit: contain !important;
 }
+
+
+#review-form {
+    width: 100%;
+    margin: 0 5rem;
+    }
+    
+    #star-rating {
+    display: inline-block;
+    }
+    
+    .star {
+    font-size: 24px;
+    cursor: pointer;
+    color: grey;
+    transition: color 0.3s ease;
+    }
+    
+    .star:hover,
+    .star.hover {
+    color: gold;
+    }
+    
+    .star.selected {
+    color: gold;
+    }
+
+    .payment{
+        margin-top: 1rem;
+    }
+
+    .review-cont{
+        display: flex;
+        justify-content: left;
+        width: 100%;
+    }
+
+    #review-form h3{
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    #review-form input{
+        width: 300px;
+        height: 30px;
+        margin-left: 30px;
+    }
+
+    #review-form button{
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+    }
+
+    #reviewList strong{
+        color: black;
+        font-size: 1.4rem;
+    }
+
+    #reviewList {
+        font-size: 1.4rem;
+    }

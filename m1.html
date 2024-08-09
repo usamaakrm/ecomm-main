@@ -16,7 +16,8 @@
         <div class="offers">
             <h5>
 
-                Store Closing in <span id="time2"></span> Minutes - Everything Must Go! Guaranteed Free Shipping on All Orders!
+                Store Closing in <span id="time2"></span> Minutes - Everything Must Go! Guaranteed Free Shipping on All
+                Orders!
             </h5>
         </div>
         <div class="offers2">
@@ -176,6 +177,7 @@
                         </form>
 
                     </div>
+                    
                     <script>
                         function myFun() {
                             let x = document.getElementById('forms')
@@ -190,6 +192,9 @@
                                 return false
                             }
                         }
+
+
+                       
                     </script>
                     <p>30-Day Return and Money-Back Guarantee</p>
                     <div class="prodt-content">
@@ -215,6 +220,36 @@
                         Pattern: Solid colors <br>
                         Details: Elastic waistband
                     </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="review-form">
+                <h3>Leave a Review</h3>
+                <form id="reviewForm">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required><br><br>
+
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required><br><br>
+
+                    <label for="rating">Rating:</label>
+                    <div id="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <input type="hidden" id="rating" name="rating" required><br><br>
+
+                    <label for="comment">Comment:</label><br>
+                    <textarea id="comment" name="comment" maxlength="100" required></textarea><br><br>
+
+                    <button type="submit">Submit Review</button>
+                </form>
+                <div id="reviewList">
+                    <h3>Reviews:</h3>
                 </div>
             </div>
         </div>
@@ -326,115 +361,116 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
     <script>
-        var d = new Date();
-        if (d.getHours() >= 0 && d.getHours() <= 19) {
-            $(".hours").show();
-            $(".message").hide();
-        }
-        else {
-            $(".hours").hide();
-            $(".message").show();
-        }
+                            var d = new Date();
+                            if (d.getHours() >= 0 && d.getHours() <= 19) {
+                                $(".hours").show();
+                                $(".message").hide();
+                            }
+                            else {
+                                $(".hours").hide();
+                                $(".message").show();
+                            }
 
-        (function () {
-            var start = new Date;
-            start.setHours(19, 10, 0); // 11am
+                            (function () {
+                                var start = new Date;
+                                start.setHours(19, 10, 0); // 11am
 
-            function pad(num) {
-                return ("0" + parseInt(num)).substr(-2);
-            }
+                                function pad(num) {
+                                    return ("0" + parseInt(num)).substr(-2);
+                                }
 
-            function tick() {
-                var now = new Date;
-                if (now > start) { // too late, go to tomorrow
-                    start.setDate(start.getDate() + 1);
-                }
-                var remain = ((start - now) / 1000);
-                var hh = pad((remain / 60 / 60) % 60);
-                var mm = pad((remain / 60) % 60);
-                var ss = pad(remain % 60);
-                document.getElementById('time2').innerHTML =
-                    + mm;
-                document.getElementById('time3').innerHTML =
-                    + mm;
+                                function tick() {
+                                    var now = new Date;
+                                    if (now > start) { // too late, go to tomorrow
+                                        start.setDate(start.getDate() + 1);
+                                    }
+                                    var remain = ((start - now) / 1000);
+                                    var hh = pad((remain / 60 / 60) % 60);
+                                    var mm = pad((remain / 60) % 60);
+                                    var ss = pad(remain % 60);
+                                    document.getElementById('time2').innerHTML =
+                                        + mm;
+                                    document.getElementById('time3').innerHTML =
+                                        + mm;
 
-                setTimeout(tick, 1000);
-            }
+                                    setTimeout(tick, 1000);
+                                }
 
-            document.addEventListener('DOMContentLoaded', tick);
-        })();
-
-
-        var imgs = document.getElementById("left-circle")
-        var main = document.getElementById("img-holder")
-        var counter = 0;
-
-        for (let i = 0; i < imgs.length; i++) {
-            let img = imgs[i]
+                                document.addEventListener('DOMContentLoaded', tick);
+                            })();
 
 
-            img.addEventListener("click", function () {
-                main.src = this.src
-            })
+                            var imgs = document.getElementById("left-circle")
+                            var main = document.getElementById("img-holder")
+                            var counter = 0;
 
-        }
+                            for (let i = 0; i < imgs.length; i++) {
+                                let img = imgs[i]
 
-        function progress(data) {
-            let cnt = 0;
-            let per = 0;
-            red = setInterval(() => {
-                let bar = document.querySelector(".progressed");
-                let percentage = setInterval(() => {
-                    per += 1;
-                    if (per >= cnt) clearInterval(percentage);
-                    document.querySelector(".text").innerHTML = `<p>${data} items left</p>`;
-                }, 10);
-                cnt += 10;
 
-                if (cnt == 100) clearInterval(red);
-                bar.style.width = data + "%";
-            }, 20);
-        }
+                                img.addEventListener("click", function () {
+                                    main.src = this.src
+                                })
 
-        progress(7)
+                            }
 
-        function d1() {
-            document.getElementById('sam').innerHTML = "XXS";
-            progress(3)
-        }
-        function d2() {
-            document.getElementById('sam').innerHTML = "XS";
-            progress(4)
-        }
-        function d3() {
-            document.getElementById('sam').innerHTML = "S";
-            progress(6)
-        }
-        function d4() {
-            document.getElementById('sam').innerHTML = "M";
-            progress(9)
-        }
-        function d5() {
-            document.getElementById('sam').innerHTML = "L";
-            progress(5)
-        }
-        function d6() {
-            document.getElementById('sam').innerHTML = "XL";
-            progress(7)
-        }
-        function d7() {
-            document.getElementById('sam').innerHTML = "2XL";
-            progress(2)
-        }
-        function d8() {
-            document.getElementById('sam').innerHTML = "3XL";
-            progress(8)
-        }
-        function d9() {
-            document.getElementById('sam').innerHTML = "4XL";
-            progress(4)
-        }
+                            function progress(data) {
+                                let cnt = 0;
+                                let per = 0;
+                                red = setInterval(() => {
+                                    let bar = document.querySelector(".progressed");
+                                    let percentage = setInterval(() => {
+                                        per += 1;
+                                        if (per >= cnt) clearInterval(percentage);
+                                        document.querySelector(".text").innerHTML = `<p>${data} items left</p>`;
+                                    }, 10);
+                                    cnt += 10;
+
+                                    if (cnt == 100) clearInterval(red);
+                                    bar.style.width = data + "%";
+                                }, 20);
+                            }
+
+                            progress(7)
+
+                            function d1() {
+                                document.getElementById('sam').innerHTML = "XXS";
+                                progress(3)
+                            }
+                            function d2() {
+                                document.getElementById('sam').innerHTML = "XS";
+                                progress(4)
+                            }
+                            function d3() {
+                                document.getElementById('sam').innerHTML = "S";
+                                progress(6)
+                            }
+                            function d4() {
+                                document.getElementById('sam').innerHTML = "M";
+                                progress(9)
+                            }
+                            function d5() {
+                                document.getElementById('sam').innerHTML = "L";
+                                progress(5)
+                            }
+                            function d6() {
+                                document.getElementById('sam').innerHTML = "XL";
+                                progress(7)
+                            }
+                            function d7() {
+                                document.getElementById('sam').innerHTML = "2XL";
+                                progress(2)
+                            }
+                            function d8() {
+                                document.getElementById('sam').innerHTML = "3XL";
+                                progress(8)
+                            }
+                            function d9() {
+                                document.getElementById('sam').innerHTML = "4XL";
+                                progress(4)
+                            }
     </script>
+    <script src="./product.js"></script>
 </body>
 
 </html>
