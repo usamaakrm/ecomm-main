@@ -156,7 +156,7 @@
                 </div>
                 
                 <div class="btn-details">
-                    <button onclick="myFun()">Order and Save 80%</button>
+                    <button onclick="myFun()" class="bouncing-button" id="btnn">Order and Save 80%</button>
                     <div class="product-form" id="forms">
                         <form  onsubmit="return validate()" target="_blank" action="https://www.google.com" >
                             <input type="text" placeholder="Enter First Name" required>
@@ -171,7 +171,10 @@
                     <script>
                         function myFun(){
                             let x = document.getElementById('forms')
-                                x.style.display = "block"
+                            let btnn = document.getElementById('btnn')
+                            x.style.display = "block"
+                            btnn.classList.remove('bouncing-button')
+
                         }
     
                         function validate(){

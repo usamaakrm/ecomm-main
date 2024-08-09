@@ -661,3 +661,58 @@ strong{
     #reviewList {
         font-size: 1.4rem;
     }
+
+    .bouncing-button {
+        padding: 15px 30px;
+        font-size: 18px;
+        background-color: #28a745; 
+        /* / Green color for a "deal" button / */
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        /* / Start animation on page load / */
+        animation: bounce 1s ease infinite;
+        text-align: center;
+        }
+        
+        /* / Animation to make the button bounce / */
+        @keyframes bounce {
+        0%, 100% {
+        transform: translateY(0);
+        }
+        50% {
+        transform: translateY(-5px);
+        }
+        }
+
+        .offers {
+            position: absolute;
+            white-space: nowrap;
+            font-size: 24px;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            top: 0;
+            left: 100%; 
+            width: 100%;
+            /* / Start off-screen / */
+            transform: translateX(10%);
+            animation: slide 5s linear infinite;
+            }
+
+        @keyframes slide {
+            0% {
+            transform: translateX(100%);
+            }
+            50% {
+            transform: translateX(-100%);
+            }
+            100%{
+                transform: translateX(0%);
+            }
+            }
+
+            .offers:hover {
+                animation-play-state: paused;
+                }
