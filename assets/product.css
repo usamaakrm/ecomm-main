@@ -728,6 +728,10 @@ strong{
             
             }
 
+            .offers2{
+                overflow-x: hidden;
+            }
+
             .offers h5{
                 transform: translateX(10%);
                 animation: slide 20s linear infinite;
@@ -736,6 +740,7 @@ strong{
             .offers2 h5{
                 transform: translateX(10%);
                 animation: slide 10s linear infinite;
+                overflow-x: hidden !important;
             }
 
         @keyframes slide {
