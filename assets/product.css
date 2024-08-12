@@ -562,7 +562,7 @@ strong{
     }
 
     .offers2 span{
-        padding: .3rem .5rem ;
+        padding: 0 .5rem ;
         border-radius: 5px;
         background-color: white;
         color: black !important;
@@ -573,10 +573,18 @@ strong{
         text-align: center;
         color: white;
         background-color: black;
-        padding: 1rem 20px;
+        padding: .5rem 20px;
         font-weight: 300;
+        padding-top: 0;
         display: block !important;
         font-size: 1rem;
+        overflow-x: hidden;
+    }
+
+    .offers2 h5{
+        padding: 10px;
+        height: 10px;
+        overflow-y: hidden;
     }
 
     /* .prod-head{
@@ -741,7 +749,6 @@ strong{
                 transform: translateX(10%);
                 animation: slide 10s linear infinite;
                 overflow-x: hidden !important;
-                overflow-y: auto;
             }
 
         @keyframes slide {
