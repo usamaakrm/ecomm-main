@@ -741,7 +741,7 @@ strong{
                 transform: translateX(10%);
                 animation: slide 10s linear infinite;
                 overflow-x: hidden !important;
-                height: 60px;
+                overflow-y: auto;
             }
 
         @keyframes slide {
