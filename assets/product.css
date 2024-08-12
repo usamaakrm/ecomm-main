@@ -728,9 +728,9 @@ strong{
             
             }
 
-            .offers2{
+            /* .offers2{
                 overflow-x: hidden;
-            }
+            } */
 
             .offers h5{
                 transform: translateX(10%);
