@@ -731,7 +731,7 @@ strong{
             color: white;
             padding: 20px;
             top: 0;
-            left: 0; 
+            left: 100%; 
             width: 100%;
             }
 
