@@ -678,11 +678,17 @@ strong{
 
     #reviewList strong{
         color: black;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        margin-top: 5rem !important ;
+    }
+
+    hr{
+        margin: 1rem 0;
     }
 
     #reviewList {
-        font-size: 1.4rem;
+        font-size: 1rem;
+        font-weight: 500 !important;
     }
 
     .bouncing-button {
@@ -710,7 +716,7 @@ strong{
         }
 
         .offers {
-            position: absolute;
+            /* position: absolute; */
             white-space: nowrap;
             font-size: 24px;
             background-color: black;
@@ -719,25 +725,25 @@ strong{
             top: 0;
             left: 100%; 
             width: 100%;
-            /* / Start off-screen / */
-            transform: translateX(10%);
-            animation: slide 5s linear infinite;
+            
             }
 
-            .offers2{
+            .offers h5{
                 transform: translateX(10%);
-                animation: slide 7s linear infinite;
+                animation: slide 20s linear infinite;
+            }
+
+            .offers2 h5{
+                transform: translateX(10%);
+                animation: slide 10s linear infinite;
             }
 
         @keyframes slide {
             0% {
             transform: translateX(100%);
             }
-            50% {
-            transform: translateX(-100%);
-            }
             100%{
-                transform: translateX(0%);
+                transform: translateX(-100%);
             }
             }
 
