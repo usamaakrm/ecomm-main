@@ -726,14 +726,13 @@ strong{
         .offers {
             /* position: absolute; */
             white-space: nowrap;
-            font-size: 22px;
+            font-size: 24px;
             background-color: black;
             color: white;
             padding: 20px;
             top: 0;
-            left: 100%; 
+            left: 0; 
             width: 100%;
-            
             }
 
             /* .offers2{
