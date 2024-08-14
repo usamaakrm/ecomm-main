@@ -533,6 +533,11 @@ input[type="checkbox"]{
          margin: 0 !important;
         padding: 0 !important; 
     }
+
+    
+#flexCheckDefault{
+    margin-left: 0rem;
+}
 }
 
 
