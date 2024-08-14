@@ -534,3 +534,18 @@ input[type="checkbox"]{
         padding: 0 !important; 
     }
 }
+
+
+#flexCheckDefault{
+    width: 20px;
+    text-align: justify;
+    margin-left: -2rem;
+}
+
+.form-check{
+    width: 100%;
+}
+
+.text-start{
+    text-align:left;
+}

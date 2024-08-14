@@ -734,7 +734,7 @@ strong{
             left: 100%; 
             width: 100vw !important;
             margin-left: -50px !important;
-            }
+         }
 
             /* .offers2{
                 overflow-x: hidden;
@@ -764,3 +764,32 @@ strong{
                 animation-play-state: paused;
                 }
 
+
+                #flexCheckDefault{
+                    width: 20px;
+                    text-align: justify;
+                }
+
+                .form-check{
+                    width: 100%;
+                }
+
+                .text-start{
+                    text-align:left;
+                    margin-left: 0rem;
+                }
+
+                /* .form-check-input:checked {
+                    background-color: black !important;
+                    border-color: black !important;
+                }
+
+                input[type="checkbox"]:checked + label ::after{
+                    background-color: green !important;
+                    border-color: green !important;
+                } */
+
+                input[type="checkbox" i] {
+                    background-color: black;
+                }
+                
