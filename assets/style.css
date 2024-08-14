@@ -544,7 +544,12 @@ input[type="checkbox"]{
     }
 
     .xas{
-        margin: 4rem;
+        margin: 5rem;
+        text-align: left;
+    }
+
+    .text-start{
+        text-align: left;
     }
 }
 
