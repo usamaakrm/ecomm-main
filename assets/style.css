@@ -535,9 +535,17 @@ input[type="checkbox"]{
     }
 
     
-#flexCheckDefault{
-    margin-left: 2rem;
-}
+    #flexCheckDefault{
+        margin-left: 2rem;
+    }
+    
+    .form-check{
+        width: 200px;
+    }
+
+    .xas{
+        margin: 4rem;
+    }
 }
 
 
