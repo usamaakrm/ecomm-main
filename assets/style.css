@@ -581,3 +581,7 @@ input[type="checkbox"]{
     align-items: center !important;
     align-content: center !important;
 }
+
+.product-form, #forms, .btn-details{
+    display: block !important;
+}
