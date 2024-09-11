@@ -568,3 +568,16 @@ input[type="checkbox"]{
 .text-start{
     text-align:left;
 }
+
+.sax{
+    width: 230px !important;
+    height: 200px !important;
+    align-items: center;
+    margin: auto !important;
+    padding: auto !important;
+}
+
+.product-cart a{
+    align-items: center !important;
+    align-content: center !important;
+}
