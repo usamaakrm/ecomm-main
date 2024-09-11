@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Aurelia Moda</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favi-icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/product.css">
+</head>
+
+<body>
+    <div class="containers">
+        <div class="offers">
+            <h5>
+
+                Store Closing in <span id="time2"></span> Minutes - Everything Must Go! Guaranteed Free Shipping on All
+                Orders!
+            </h5>
+        </div>
+        <div class="offers2">
+            <h5>
+
+                Store Closing in <span id="time3"></span> Minutes. Free Shipping!
+            </h5>
+        </div>
+        <nav class="nav-flex">
+            <div>
+                <a href="./index.html">
+                    <h4>Aurelia Moda</h4>
+                </a>
+            </div>
+            <!-- <div class="nav-icons">
+                <a href="">ADD TO CART</a>
+            </div> -->
+        </nav>
+    
+        <div class="product-flex">
+            <div class="picture">
+                <div class="column-9 main-img-9">
+                    <div id="img-holder"></div>
+                </div>
+                <div class="preview edit-w1" id="Thumbnails">
+                    <div><img
+                            onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/kitchenware.png)'"
+                            src="./assets/unisex/kitchenware.png" id="left-circle">
+                    </div>
+                <!--    <div><img
+                            onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/callaway2.png)'"
+                            src="./assets/unisex/callaway2.png" id="left-circle">
+                    </div>
+                    <div><img
+                            onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/callaway3.png)'"
+                            src="./assets/unisex/callaway3.png" id="left-circle">
+                    </div>
+                
+                <div><img
+                        onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/w3.png)'"
+                        src="./assets/unisex/w3.png" id="left-circle">
+                </div> -->
+                    
+                    <style>
+                        #img-holder {
+                            background-image: url('./assets/unisex/kitchenware.png');
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            width: 100%;
+                            height: 80vh;
+                        }
+                    </style>
+    
+                </div>
+            </div>
+            <div class="content">
+                <div class="flex rate">
+                    <img src="/assets/img/ratings.svg" alt="" width="100px">
+    
+                    <h5>9,543 ratings</h5>
+                </div>
+                <h1 class="prod-head">Kitchenware</h1>
+                <h3 class="prices">$ 14.99 <span class="prices2">$ 104.95</span></h3>
+                <hr>
+                <div>
+                    <div class="flex item-col ">
+                        <div>
+                            <img src="./assets/img/delivery.webp" alt="" width="20px">
+                        </div>
+                        <div>
+                            <p>Free shipping within 48 hours</p>
+                        </div>
+                    </div>
+                    <div class="flex item-col">
+                        <div>
+                            <img src="./assets/img/verified.webp" alt="" width="20px">
+                        </div>
+                        <div>
+                            <p>Shipped from London, UK</p>
+                        </div>
+                    </div>
+                    <div class="flex item-col">
+                        <div>
+                            <img src="./assets/img/retun.svg" alt="" width="20px">
+                        </div>
+                        <div>
+                            <p>Free 30-day return</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="progressed"></div>
+                </div>
+                <div class="text"></div>
+                <div  class="color-cont">
+                    <!--
+                    <p>Color:</p>
+                    <div class="colors">
+                        <div class="preview" >
+                            <div onclick="progress(1)"><img
+                                    onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/golf1.jpg)'"
+                                    src="./assets/unisex/golf1.jpg" id="left-circle">
+                            </div>
+                            <div onclick="progress(4)"><img
+                                    onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/w1.png)'"
+                                    src="./assets/unisex/w1.png" id="left-circle">
+                            </div> 
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    #img-holder {
+                        background-image: url('./assets/unisex/golf1.jpg');
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 80vh;
+                    }
+                </style>
+                <div class="size-cont">
+                    <p>Size: <span id="sam"></span></p>
+                    <div class="size">
+                        <div class="size-1" onclick="d1()">3</div>
+                        <div class="size-1" onclick="d2()">4</div>
+                        <div class="size-2" onclick="d3()">5</div>
+                        <div class="size-3" onclick="d4()">6</div>
+                        <div class="size-4" onclick="d5()">7</div>
+                        <div class="size-5" onclick="d6()">8</div>
+                        <div class="size-6" onclick="d7()">9</div>
+                        <div class="size-7" onclick="d8()">10</div>
+                        <div class="size-7" onclick="d9()">11</div>
+                    </div>-->
+                </div>
+                
+                <div class="btn-details">
+                    <button onclick="myFun()" class="bouncing-button" id="btnn">Order and Save 80%</button>
+                    <div class="product-form" id="forms">
+                        <form  onsubmit="return validate()" target="_blank" action="https://www.google.com" >
+                            <input type="text" placeholder="Enter First Name" required>
+                            <input type="text" placeholder="Enter Last Name" required><br>
+                            <input type="email" placeholder="Enter Email ID" id="email" required>
+                            <input type="number" placeholder="Enter Phone Number" id="phone" required><br>
+                            <div class="d-flex mt-5"> 
+        
+                                <div class="form-check">  
+            
+                                    <input class="form-check-inputs" type="checkbox" id="flexCheckDefault">
+            
+                                    <label class="form-check-label small text-start" for="flexCheckDefault">
+                                        By Clicking, I Agree To The Terms Of This Site And Our Privacy Policy
+                                    </label>
+            
+                                </div>
+            
+                            </div>
+                            <button class="btn">SIGN ME UP</button> <br>
+                            <img src="./assets/img/image (1).png" alt="" width="300px" class="payment">
+                        </form>
+                            
+                    </div>
+                    <script>
+                        function myFun(){
+                            let x = document.getElementById('forms')
+                            let btnn = document.getElementById('btnn')
+                            x.style.display = "block"
+                            btnn.classList.remove('bouncing-button')
+
+                        }
+    
+                        function validate(){
+                            var email = document.getElementById('email').value
+                            var phone = document.getElementById('phone').value
+                            if(phone.length <= 9 || email.length <= 6){
+                                alert("invalid data")
+                                return false
+                            }
+                        }
+                    </script>
+                    <p>30-Day Return and Money-Back Guarantee</p>
+                    <div class="prodt-content">
+                        <p>At Aurelia Moda, your satisfaction is our priority. If you're not completely happy with your purchase, return it within 30 days in its original condition for a full refund or exchange. Items must be unworn, unwashed, and include all original tags and packaging. Contact our customer service team to start your return. <br><br>
+                            LEGENDARY STYLE REFINED. The radiance lives on in the Nike Air Force 1 ’07, the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine. The stitched overlays on the upper add heritage style, durability and support. Originally designed for performance hoops, the Nike Air cushioning adds lightweight, all-day comfort.
+                        </p>
+                        <h4>Design & Extras</h4>
+                            •	Leather  <br>
+                            •	Round cap  <br>
+                            •	Padded insole  <br>
+                            •	Profile sole  <br>
+                            •	Reinforced heel  <br>
+                            •	Toe cap  <br>
+                            •	8-hole lacing  <br>
+                            •	Padded shaft edge  <br>
+                            •	Perforation  <br>
+                            •	Flexible running sole  <br>
+                            •	Smooth leather  <br>
+                            •	Lace closure  <br>
+                        <h4>Material and care</h4>
+                        •	Outer material: Leather <br>
+                        •	Lining: Textile <br>
+                        •	Running sole: Rubber <br>
+                        •	Contains non-textile parts of animal origin: Yes <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="review-cont">
+            <div id="review-form">
+                <h3>Leave a Review</h3>
+                <form id="reviewForm">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required><br><br>
+
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required><br><br>
+
+                    <label for="rating">Rating:</label>
+                    <div id="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <input type="hidden" id="rating" name="rating" required><br><br>
+
+                    <label for="comment">Comment:</label><br>
+                    <textarea id="comment" name="comment" maxlength="100" required></textarea><br><br>
+
+                    <button type="submit">Submit Review</button>
+                </form>
+                <div id="reviewList">
+                    <h3>Reviews:</h3>
+                    <strong>Willaim.K</strong> (4 stars)<br>The product is Awesome<hr>
+                    <strong>Jack.L</strong> (3 stars)<br>We always feel happy and satisfied while purchasing<hr>
+                    <strong>Alice.M</strong> (5 stars)<br>Incredible Experience with Aurelia Moda<hr>
+                    <strong>Arya.A</strong> (4 stars)<br>Outstanding services and the Product was exactly looking for<hr>
+                    <strong>Beatriz.X</strong> (4 stars)<br>They went above and beyond to help me find perfect item.<hr>
+                    <strong>Chiya.D</strong> (3 stars)<br>Delivered timely<hr>
+                    <strong>Dylan.T</strong> (5 stars)<br>I highly recommend this items<hr>
+                    <strong>Oliver.S</strong> (5 stars)<br>I was completely impressed with their professionalism and customer service<hr>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="rewies">
+                <h3>30-Day Return and Money-Back Guarantee</h3>
+                <p>At Aurelia Moda, your satisfaction is our priority. If you're not completely happy with your
+                    purchase, return it within 30 days in its original condition for a full refund or exchange.
+                    Items must be unworn, unwashed, and include all original tags and packaging. Contact our
+                    customer service team to start your return.
+                </p>
+
+            </div>
+            <h3 class="clients">Ne nous croyez pas sur parole, laissez parler nos clients !</h3>
+            <div class="comments-container">
+                <div class="comments">
+                    <div class="rat-star">
+                        <span class="btn-headline" style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★ ★ ★ ★ ★</span>
+                    </div>
+                    <div>
+                        <h3>Alain J.</h3>
+                        <img src="./assets/img/French flag png.webp" alt="" width="20">
+                        <p>Beau sweat à capuche en coton de bonne qualité. S'adapte comme promis et est plus beau que son homologue Hollister. Il a l'air plus élégant lorsque l'on croise des collègues. Prix ​​élevé mais c'est bien sur le vrai RL</p>
+                    </div>
+                </div>
+                <div class="comments">
+                    <div class="rat-star">
+                        <span class="btn-headline" style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★ ★ ★ ★ ★</span>
+                    </div>
+                    <div>
+                        <h3>Charles M.</h3>
+                        <img src="./assets/img/French flag png.webp" alt="" width="20">
+                        <p>S'adapte très bien et j'adore la sensation. Le seul inconvénient était le prix</p>
+                    </div>
+                </div>
+                <div class="comments">
+                    <div class="rat-star">
+                        <span class="btn-headline" style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★ ★ ★ ★ ★</span>
+                    </div>
+                    <div>
+                        <h3>Lucas B.</h3>
+                        <img src="./assets/img/French flag png.webp" alt="" width="20">
+                        <p>Sweat-shirt super doux. Ligne ajustée et couleur magnifique</p>
+                    </div>
+                </div>
+                <div class="comments">
+                    <div class="rat-star">
+                        <span class="btn-headline" style="color: rgb(242, 204, 101); font-weight: bold; font-size: 16px; text-align: center;">★ ★ ★ ★ ★</span>
+                    </div>
+                    <div>
+                        <h3>Gabriel W.</h3>
+                        <img src="./assets/img/French flag png.webp" alt="" width="20">
+                        <p>J'ai vraiment aimé la couleur et une fois que j'ai reçu la chemise, elle est tout aussi superbe. Je prends un grand et il me va parfaitement et est très confortable. Très satisfait de la qualité de la chemise et du toucher.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <div >
+                <div class="nav-links">
+                    <img src="../../../assets/bg/footer.png" alt="">
+                    <div class="product-form">
+                        <h3>Sign up to get 30% OFF</h3>
+                        <input type="text" placeholder="Enter First Name" required><br>
+                        <input type="text" placeholder="Enter Last Name" required><br>
+                        <input type="email" placeholder="Enter Email ID" required><br>
+                        <input type="text" placeholder="Enter Phone Number" required><br>
+                        <button class="btn" onclick="forms2()">SIGN ME UP</button>
+                    </div>
+    
+                    <div class="links flex">
+                        <a href="./terms.html" data-aos="fade-up">Terms & Condition</a>
+                        <a href="./privacy.html" data-aos="fade-up">Privacy Policy</a>
+                    </div>
+    
+                </div>
+    
+                <div class="social-icons">
+                    <div class="address d-flex">
+                        <h3>Aurelia Moda</h3>
+                    </div>
+                    <h6>Developed By Aurelia Moda | All Rights Reserved @ 2024</h6>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script>
+        var d = new Date();
+        if (d.getHours() >= 0 && d.getHours() <= 19) {
+            $(".hours").show();
+            $(".message").hide();
+        }
+        else {
+            $(".hours").hide();
+            $(".message").show();
+        }
+
+        (function () {
+            var start = new Date;
+            start.setHours(19, 10, 0); // 11am
+
+            function pad(num) {
+                return ("0" + parseInt(num)).substr(-2);
+            }
+
+            function tick() {
+                var now = new Date;
+                if (now > start) { // too late, go to tomorrow
+                    start.setDate(start.getDate() + 1);
+                }
+                var remain = ((start - now) / 1000);
+                var hh = pad((remain / 60 / 60) % 60);
+                var mm = pad((remain / 60) % 60);
+                var ss = pad(remain % 60);
+                document.getElementById('time2').innerHTML =
+                    + mm;
+                document.getElementById('time3').innerHTML =
+                    + mm;
+
+                setTimeout(tick, 1000);
+            }
+
+            document.addEventListener('DOMContentLoaded', tick);
+        })();
+
+
+        var imgs = document.getElementById("left-circle")
+        var main = document.getElementById("img-holder")
+        var counter = 0;
+
+        for (let i = 0; i < imgs.length; i++) {
+            let img = imgs[i]
+
+
+            img.addEventListener("click", function () {
+                main.src = this.src
+            })
+
+        }
+
+        function progress(data) {
+            let cnt = 0;
+            let per = 0;
+            red = setInterval(() => {
+                let bar = document.querySelector(".progressed");
+                let percentage = setInterval(() => {
+                    per += 1;
+                    if (per >= cnt) clearInterval(percentage);
+                    document.querySelector(".text").innerHTML = `<p>${data} items left</p>`;
+                }, 10);
+                cnt += 10;
+
+                if (cnt == 100) clearInterval(red);
+                bar.style.width = data + "%";
+            }, 20);
+        }
+
+        progress(2)
+
+        function d1() {
+            document.getElementById('sam').innerHTML = "3";
+            progress(3)
+        }
+        function d2() {
+            document.getElementById('sam').innerHTML = "4";
+            progress(4)
+        }
+        function d3() {
+            document.getElementById('sam').innerHTML = "5";
+            progress(6)
+        }
+        function d4() {
+            document.getElementById('sam').innerHTML = "6";
+            progress(9)
+        }
+        function d5() {
+            document.getElementById('sam').innerHTML = "7";
+            progress(5)
+        }
+        function d6() {
+            document.getElementById('sam').innerHTML = "8";
+            progress(7)
+        }
+        function d7() {
+            document.getElementById('sam').innerHTML = "9";
+            progress(2)
+        }
+        function d8() {
+            document.getElementById('sam').innerHTML = "10";
+            progress(8)
+        }
+        function d9() {
+            document.getElementById('sam').innerHTML = "11";
+            progress(4)
+        }
+    </script>
+    <script src="./product.js"></script>
+</body>
+
+</html>
