@@ -98,6 +98,10 @@ strong{
     display: flex;
     justify-content: center !important;
 }
+@media (max-width: 1000px) {
+	justify-content: left !important;
+    
+}
 
 #main{
     border-radius: 10px;
@@ -629,6 +633,8 @@ strong{
 
 .edit-w1 img{
    object-fit: contain !important;
+   background-color: rgba(220, 220, 220, 0.358);
+
 }
 
 

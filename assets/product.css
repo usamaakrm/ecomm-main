@@ -98,6 +98,12 @@ strong{
     display: flex;
     justify-content: center !important;
 }
+@media only screen and (max-width: 600px) {
+  #Thumbnails {
+    display: flex;
+    justify-content: left !important;
+  }
+}
 
 #main{
     border-radius: 10px;
