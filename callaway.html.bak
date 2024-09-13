@@ -177,7 +177,7 @@
                                 </div>
             
                             </div>
-                            <button class="btn">SIGN ME UP</button> <br>
+                            <button class="bouncing-new">SIGN ME UP</button> <br>
                             <img src="./assets/img/image (1).png" alt="" width="300px" class="payment">
                         </form>
                             

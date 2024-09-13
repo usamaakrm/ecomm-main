@@ -629,6 +629,8 @@ strong{
 
 .edit-w1 img{
    object-fit: contain !important;
+   background-color: rgba(220, 220, 220, 0.358);
+
 }
 
 

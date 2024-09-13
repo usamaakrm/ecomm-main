@@ -803,7 +803,6 @@ strong{
 .bouncing-new {
         padding: 15px 30px;
         font-size: 18px;
-		width:35%;
         background-color: #28a745; 
         /* / Green color for a "deal" button / */
         color: white;
