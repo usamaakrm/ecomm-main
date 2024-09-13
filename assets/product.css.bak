@@ -243,6 +243,8 @@ strong{
     margin-top: 1rem;
     font-weight: 600;
   }
+  
+  
 
   .btn-details p{
     margin-top: 0.5rem;
@@ -797,4 +799,100 @@ strong{
 .product-form, #forms, .btn-details{
     display: block !important;
 }
+
+.bouncing-new {
+        padding: 15px 30px;
+        font-size: 18px;
+		width:35%;
+        background-color: #28a745; 
+        /* / Green color for a "deal" button / */
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        /* / Start animation on page load / */
+        animation: bounce 1s ease infinite;
+        text-align: center;
+        }
+        
+        /* / Animation to make the button bounce / */
+        @keyframes bounce {
+        0%, 100% {
+        transform: translateY(0);
+        }
+        50% {
+        transform: translateY(-5px);
+        }
+        }
+
+        .offers {
+            /* position: absolute; */
+            white-space: nowrap;
+            font-size: 24px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            top: 0;
+            left: 100%; 
+            width: 100vw !important;
+            margin-left: -50px !important;
+         }
+
+            /* .offers2{
+                overflow-x: hidden;
+            } */
+
+            .offers h5{
+                transform: translateX(10%);
+                animation: slide 20s linear infinite;
+            }
+
+            .offers2 h5{
+                transform: translateX(10%);
+                animation: slide 10s linear infinite;
+                overflow-x: hidden !important;
+            }
+
+        @keyframes slide {
+            0% {
+            transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+            }
+
+            .offers:hover, .offers2:hover {
+                animation-play-state: paused;
+                }
+
+
+                #flexCheckDefault{
+                    width: 20px;
+                    text-align: justify;
+                }
+
+                .form-check{
+                    width: 100%;
+                }
+
+                .text-start{
+                    text-align:left;
+                    margin-left: 0rem;
+                }
+
+                /* .form-check-input:checked {
+                    background-color: black !important;
+                    border-color: black !important;
+                }
+
+                input[type="checkbox"]:checked + label ::after{
+                    background-color: green !important;
+                    border-color: green !important;
+                } */
+
+                input[type="checkbox" i] {
+                    background-color: black;
+                }
+
                 
