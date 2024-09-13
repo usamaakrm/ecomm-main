@@ -902,4 +902,28 @@ strong{
                     background-color: black;
                 }
 
-                
+@media screen and (max-width: 480px) {
+      .review-container {
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .image-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-section img {
+        height: 150px;
+        width: auto;
+        max-width: 100%;
+        object-fit: cover;
+        order: 1;
+      }
+
+      .form-section {
+        margin-top: 15px;
+        order: 2;
+      }
+    }     
