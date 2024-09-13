@@ -43,10 +43,10 @@
                 </div>
                 <div class="preview edit-w1" id="Thumbnails">
                     <div><img
-                            onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/kitchenware.png)'"
-                            src="./assets/unisex/kitchenware.png" id="left-circle">
+                            onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/callaway1.png)'"
+                            src="./assets/unisex/callaway1.png" id="left-circle">
                     </div>
-                <!--    <div><img
+                    <div><img
                             onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/callaway2.png)'"
                             src="./assets/unisex/callaway2.png" id="left-circle">
                     </div>
@@ -55,18 +55,17 @@
                             src="./assets/unisex/callaway3.png" id="left-circle">
                     </div>
                 
-                <div><img
+                <!-- <div><img
                         onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/w3.png)'"
                         src="./assets/unisex/w3.png" id="left-circle">
                 </div> -->
                     
                     <style>
                         #img-holder {
-                            background-image: url('./assets/unisex/kitchenware.png');
+                            background-image: url('./assets/unisex/callaway1.PNG');
                             background-position: center;
                             background-size: contain;
                             background-repeat: no-repeat;
-							background-color: rgba(220, 220, 220, 0.358);
                             width: 100%;
                             height: 80vh;
                         }
@@ -80,7 +79,7 @@
     
                     <h5>9,543 ratings</h5>
                 </div>
-                <h1 class="prod-head">Kitchenware</h1>
+                <h1 class="prod-head">Callaway Golf </h1>
                 <h3 class="prices">$ 14.99 <span class="prices2">$ 104.95</span></h3>
                 <hr>
                 <div>
@@ -157,7 +156,7 @@
                 </div>
                 
                 <div class="btn-details">
-                    <button class="bouncing-button" id="btnn">Order and Save 80%</button>
+                    <button onclick="myFun()" class="bouncing-button" id="btnn">Order and Save 80%</button>
                     <div class="product-form" id="forms">
                         <form  onsubmit="return validate()" target="_blank" action="https://www.google.com" >
                             <input type="text" placeholder="Enter First Name" required>
@@ -183,6 +182,13 @@
                             
                     </div>
                     <script>
+                        function myFun(){
+                            let x = document.getElementById('forms')
+                            let btnn = document.getElementById('btnn')
+                            x.style.display = "block"
+                            btnn.classList.remove('bouncing-button')
+
+                        }
     
                         function validate(){
                             var email = document.getElementById('email').value
