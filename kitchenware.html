@@ -74,6 +74,24 @@
       }
     }
   </style>
+  <style>
+    #img-holders {
+      background-image: url("./assets/unisex/kitchenware.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: rgba(220, 220, 220, 0.358);
+      width: 100%;
+      height: 655px;
+    }
+    @media (max-width: 768px) {
+      #img-holders {
+        width: calc(100% - 60px);
+        margin: 10px 30px;
+        height: 40vh;
+      }
+    }
+  </style>
   <body>
     <div class="containers">
       <div class="offers">
@@ -104,30 +122,17 @@
             <div id="img-holder"></div>
           </div>
           <div class="preview edit-w1" id="Thumbnails">
-            <div>
+            <!-- <div>
               <img
                 onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/kitchenware.png)'"
                 src="./assets/unisex/kitchenware.png"
                 id="left-circle"
               />
-            </div>
-            <!--    <div><img
-                            onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/callaway2.png)'"
-                            src="./assets/unisex/callaway2.png" id="left-circle">
-                    </div>
-                    <div><img
-                            onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/callaway3.png)'"
-                            src="./assets/unisex/callaway3.png" id="left-circle">
-                    </div>
-                
-                <div><img
-                        onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/w3.png)'"
-                        src="./assets/unisex/w3.png" id="left-circle">
-                </div> -->
+            </div> -->
 
             <style>
               #img-holder {
-                background-image: url("./assets/unisex/kitchenware.png");
+                background-image: url("./assets/unisex/kitchenware1.png");
                 background-position: center;
                 background-size: contain;
                 background-repeat: no-repeat;
@@ -183,48 +188,7 @@
             <div class="progressed"></div>
           </div>
           <div class="text"></div>
-          <div class="color-cont">
-            <!--
-                    <p>Color:</p>
-                    <div class="colors">
-                        <div class="preview" >
-                            <div onclick="progress(1)"><img
-                                    onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/golf1.jpg)'"
-                                    src="./assets/unisex/golf1.jpg" id="left-circle">
-                            </div>
-                            <div onclick="progress(4)"><img
-                                    onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/w1.png)'"
-                                    src="./assets/unisex/w1.png" id="left-circle">
-                            </div> 
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-                <style>
-                    #img-holder {
-                        background-image: url('./assets/unisex/golf1.jpg');
-                        background-position: center;
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        width: 100%;
-                        height: 80vh;
-                    }
-                </style>
-                <div class="size-cont">
-                    <p>Size: <span id="sam"></span></p>
-                    <div class="size">
-                        <div class="size-1" onclick="d1()">3</div>
-                        <div class="size-1" onclick="d2()">4</div>
-                        <div class="size-2" onclick="d3()">5</div>
-                        <div class="size-3" onclick="d4()">6</div>
-                        <div class="size-4" onclick="d5()">7</div>
-                        <div class="size-5" onclick="d6()">8</div>
-                        <div class="size-6" onclick="d7()">9</div>
-                        <div class="size-7" onclick="d8()">10</div>
-                        <div class="size-7" onclick="d9()">11</div>
-                    </div>-->
-          </div>
+          <div class="color-cont"></div>
 
           <div class="btn-details">
             <!-- <button class="bouncing-button" id="btnn">Order and Save 80%</button> -->
@@ -288,6 +252,22 @@
                 }
               }
             </script>
+          </div>
+        </div>
+      </div>
+      <div class="product-flex">
+        <div class="picture">
+          <div class="column-9 main-img-9">
+            <div id="img-holders"></div>
+          </div>
+          <div class="preview edit-w1" id="Thumbnails">
+            <div></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="btn-details">
+            <!-- <button class="bouncing-button" id="btnn">Order and Save 80%</button> -->
+
             <p>30-Day Return and Money-Back Guarantee</p>
             <div class="prodt-content">
               <p>
