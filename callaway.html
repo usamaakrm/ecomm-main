@@ -26,12 +26,12 @@
 
     .image-section img {
       width: 100%;
-      max-width: 400px;
+      max-width: 620px;
       height: 340px;
       object-fit: cover;
       display: block;
       border-radius: 15px;
-      margin-left: 150px;
+      margin-left: 130px;
       margin-top: 50px;
     }
 
@@ -63,17 +63,8 @@
         padding: 10px;
       }
 
-      .image-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
       .image-section img {
         height: 150px;
-        width: auto;
-        max-width: 100%;
-        object-fit: cover;
         order: 1;
       }
 
@@ -84,33 +75,15 @@
     }
   </style>
   <style>
-    #img-holder {
+    #img-holders {
       background-image: url("./assets/unisex/callaway1.png");
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
       background-color: rgba(220, 220, 220, 0.358);
       width: 100%;
-      height: 80vh;
+      height: 655px;
     }
-    @media (max-width: 768px) {
-      #img-holder {
-        width: calc(100% - 60px);
-        margin: 10px 30px;
-      }
-    }
-  </style>
-   <style>
-    #img-holders {
-      background-image: url("./assets/unisex/callaway2.png");
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-color: rgba(220, 220, 220, 0.358);
-      width: 100%;
-      height: 590px;
-    }
-
     @media (max-width: 768px) {
       #img-holders {
         width: calc(100% - 60px);
@@ -151,24 +124,29 @@
           <div class="preview edit-w1" id="Thumbnails">
             <!-- <div>
               <img
-                onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/makita1.png)'"
-                src="./assets/unisex/makita1.png"
+                onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/kitchenware.png)'"
+                src="./assets/unisex/kitchenware.png"
                 id="left-circle"
               />
             </div> -->
-            <!--    <div><img
-                            onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/callaway2.png)'"
-                            src="./assets/unisex/callaway2.png" id="left-circle">
-                    </div>
-                    <div><img
-                            onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/callaway3.png)'"
-                            src="./assets/unisex/callaway3.png" id="left-circle">
-                    </div>
-                
-                <div><img
-                        onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/w3.png)'"
-                        src="./assets/unisex/w3.png" id="left-circle">
-                </div> -->
+
+            <style>
+              #img-holder {
+                background-image: url("./assets/unisex/callaway2.png");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-color: rgba(220, 220, 220, 0.358);
+                width: 100%;
+                height: 80vh;
+              }
+              @media (max-width: 768px) {
+                #img-holder {
+                  width: calc(100% - 60px);
+                  margin: 10px 30px;
+                }
+              }
+            </style>
           </div>
         </div>
         <div class="content">
@@ -210,51 +188,10 @@
             <div class="progressed"></div>
           </div>
           <div class="text"></div>
-          <div class="color-cont">
-            <!--
-                    <p>Color:</p>
-                    <div class="colors">
-                        <div class="preview" >
-                            <div onclick="progress(1)"><img
-                                    onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/golf1.jpg)'"
-                                    src="./assets/unisex/golf1.jpg" id="left-circle">
-                            </div>
-                            <div onclick="progress(4)"><img
-                                    onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/w1.png)'"
-                                    src="./assets/unisex/w1.png" id="left-circle">
-                            </div> 
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-                <style>
-                    #img-holder {
-                        background-image: url('./assets/unisex/golf1.jpg');
-                        background-position: center;
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        width: 100%;
-                        height: 80vh;
-                    }
-                </style>
-                <div class="size-cont">
-                    <p>Size: <span id="sam"></span></p>
-                    <div class="size">
-                        <div class="size-1" onclick="d1()">3</div>
-                        <div class="size-1" onclick="d2()">4</div>
-                        <div class="size-2" onclick="d3()">5</div>
-                        <div class="size-3" onclick="d4()">6</div>
-                        <div class="size-4" onclick="d5()">7</div>
-                        <div class="size-5" onclick="d6()">8</div>
-                        <div class="size-6" onclick="d7()">9</div>
-                        <div class="size-7" onclick="d8()">10</div>
-                        <div class="size-7" onclick="d9()">11</div>
-                    </div>-->
-          </div>
+          <div class="color-cont"></div>
 
           <div class="btn-details">
-            <!-- <button onclick="myFun()" class="bouncing-button" id="btnn">Order and Save 80%</button> -->
+            <!-- <button class="bouncing-button" id="btnn">Order and Save 80%</button> -->
             <div class="product-form" id="forms">
               <form
                 onsubmit="return validate()"
@@ -306,13 +243,6 @@
               </form>
             </div>
             <script>
-              function myFun() {
-                let x = document.getElementById("forms");
-                let btnn = document.getElementById("btnn");
-                x.style.display = "block";
-                btnn.classList.remove("bouncing-button");
-              }
-
               function validate() {
                 var email = document.getElementById("email").value;
                 var phone = document.getElementById("phone").value;
@@ -330,45 +260,50 @@
           <div class="column-9 main-img-9">
             <div id="img-holders"></div>
           </div>
-       
+          <div class="preview edit-w1" id="Thumbnails">
+            <div></div>
+          </div>
         </div>
-
         <div class="content">
-          <p>30-Day Return and Money-Back Guarantee</p>
-          <div class="prodt-content">
-            <p>
-              At Aurelia Moda, your satisfaction is our priority. If you're not
-              completely happy with your purchase, return it within 30 days in
-              its original condition for a full refund or exchange. Items must
-              be unworn, unwashed, and include all original tags and packaging.
-              Contact our customer service team to start your return.
-              <br /><br />
-              LEGENDARY STYLE REFINED. The radiance lives on in the Nike Air
-              Force 1 ’07, the b-ball OG that puts a fresh spin on what you know
-              best: durably stitched overlays, clean finishes and the perfect
-              amount of flash to make you shine. The stitched overlays on the
-              upper add heritage style, durability and support. Originally
-              designed for performance hoops, the Nike Air cushioning adds
-              lightweight, all-day comfort.
-            </p>
-            <h4>Design & Extras</h4>
-            • Leather <br />
-            • Round cap <br />
-            • Padded insole <br />
-            • Profile sole <br />
-            • Reinforced heel <br />
-            • Toe cap <br />
-            • 8-hole lacing <br />
-            • Padded shaft edge <br />
-            • Perforation <br />
-            • Flexible running sole <br />
-            • Smooth leather <br />
-            • Lace closure <br />
-            <h4>Material and care</h4>
-            • Outer material: Leather <br />
-            • Lining: Textile <br />
-            • Running sole: Rubber <br />
-            • Contains non-textile parts of animal origin: Yes <br />
+          <div class="btn-details">
+            <!-- <button class="bouncing-button" id="btnn">Order and Save 80%</button> -->
+
+            <p>30-Day Return and Money-Back Guarantee</p>
+            <div class="prodt-content">
+              <p>
+                At Aurelia Moda, your satisfaction is our priority. If you're
+                not completely happy with your purchase, return it within 30
+                days in its original condition for a full refund or exchange.
+                Items must be unworn, unwashed, and include all original tags
+                and packaging. Contact our customer service team to start your
+                return. <br /><br />
+                LEGENDARY STYLE REFINED. The radiance lives on in the Nike Air
+                Force 1 ’07, the b-ball OG that puts a fresh spin on what you
+                know best: durably stitched overlays, clean finishes and the
+                perfect amount of flash to make you shine. The stitched overlays
+                on the upper add heritage style, durability and support.
+                Originally designed for performance hoops, the Nike Air
+                cushioning adds lightweight, all-day comfort.
+              </p>
+              <h4>Design & Extras</h4>
+              • Leather <br />
+              • Round cap <br />
+              • Padded insole <br />
+              • Profile sole <br />
+              • Reinforced heel <br />
+              • Toe cap <br />
+              • 8-hole lacing <br />
+              • Padded shaft edge <br />
+              • Perforation <br />
+              • Flexible running sole <br />
+              • Smooth leather <br />
+              • Lace closure <br />
+              <h4>Material and care</h4>
+              • Outer material: Leather <br />
+              • Lining: Textile <br />
+              • Running sole: Rubber <br />
+              • Contains non-textile parts of animal origin: Yes <br />
+            </div>
           </div>
         </div>
       </div>
@@ -423,7 +358,7 @@
             </div>
             <div class="image-section">
               <img
-                src="./assets/reviewassets/depositphotos_260162354-stock-illustration-young-handyman-unifrom-standing-his.png"
+                src="./assets/reviewassets/golf.png"
                 alt="Review"
               />
             </div>
