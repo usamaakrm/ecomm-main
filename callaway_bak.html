@@ -43,6 +43,13 @@
       .image-section {
         width: 100%;
         margin: 0;
+        order: 1;
+      }
+
+      .form-section {
+        width: 100%;
+        margin-top: 20px;
+        order: 2;
       }
 
       .image-section img {
@@ -51,12 +58,8 @@
         margin-left: 0;
         margin-top: 0;
       }
-
-      .form-section {
-        width: 100%;
-        margin-top: 20px;
-      }
     }
+
     @media screen and (max-width: 480px) {
       .review-container {
         gap: 10px;
@@ -65,33 +68,31 @@
 
       .image-section img {
         height: 150px;
-        order: 1;
       }
 
       .form-section {
         margin-top: 15px;
-        order: 2;
       }
     }
   </style>
   <style>
-    #img-holders {
-      background-image: url("./assets/unisex/kitchenware.png");
+    #img-holder {
+      background-image: url("./assets/unisex/callaway1.PNG");
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
       background-color: rgba(220, 220, 220, 0.358);
       width: 100%;
-      height: 655px;
+      height: 80vh;
     }
     @media (max-width: 768px) {
-      #img-holders {
+      #img-holder {
         width: calc(100% - 60px);
         margin: 10px 30px;
-        height: 40vh;
       }
     }
   </style>
+
   <body>
     <div class="containers">
       <div class="offers">
@@ -122,31 +123,32 @@
             <div id="img-holder"></div>
           </div>
           <div class="preview edit-w1" id="Thumbnails">
-            <!-- <div>
+            <div>
               <img
-                onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/kitchenware.png)'"
-                src="./assets/unisex/kitchenware.png"
+                onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/callaway1.png)'"
+                src="./assets/unisex/callaway1.png"
                 id="left-circle"
               />
-            </div> -->
+            </div>
+            <div>
+              <img
+                onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/callaway2.png)'"
+                src="./assets/unisex/callaway2.png"
+                id="left-circle"
+              />
+            </div>
+            <div>
+              <img
+                onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/callaway3.png)'"
+                src="./assets/unisex/callaway3.png"
+                id="left-circle"
+              />
+            </div>
 
-            <style>
-              #img-holder {
-                background-image: url("./assets/unisex/kitchenware.png");
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-color: rgba(220, 220, 220, 0.358);
-                width: 100%;
-                height: 80vh;
-              }
-              @media (max-width: 768px) {
-                #img-holder {
-                  width: calc(100% - 60px);
-                  margin: 10px 30px;
-                }
-              }
-            </style>
+            <!-- <div><img
+                        onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/w3.png)'"
+                        src="./assets/unisex/w3.png" id="left-circle">
+                </div> -->
           </div>
         </div>
         <div class="content">
@@ -155,7 +157,7 @@
 
             <h5>9,543 ratings</h5>
           </div>
-          <h1 class="prod-head">Kitchenware</h1>
+          <h1 class="prod-head">Callaway Golf</h1>
           <h3 class="prices">$ 14.99 <span class="prices2">$ 104.95</span></h3>
           <hr />
           <div>
@@ -188,10 +190,51 @@
             <div class="progressed"></div>
           </div>
           <div class="text"></div>
-          <div class="color-cont"></div>
+          <div class="color-cont">
+            <!--
+                    <p>Color:</p>
+                    <div class="colors">
+                        <div class="preview" >
+                            <div onclick="progress(1)"><img
+                                    onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/golf1.jpg)'"
+                                    src="./assets/unisex/golf1.jpg" id="left-circle">
+                            </div>
+                            <div onclick="progress(4)"><img
+                                    onclick="document.getElementById('img-holder').style.backgroundImage = 'url(./assets/unisex/w1.png)'"
+                                    src="./assets/unisex/w1.png" id="left-circle">
+                            </div> 
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    #img-holder {
+                        background-image: url('./assets/unisex/golf1.jpg');
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 80vh;
+                    }
+                </style>
+                <div class="size-cont">
+                    <p>Size: <span id="sam"></span></p>
+                    <div class="size">
+                        <div class="size-1" onclick="d1()">3</div>
+                        <div class="size-1" onclick="d2()">4</div>
+                        <div class="size-2" onclick="d3()">5</div>
+                        <div class="size-3" onclick="d4()">6</div>
+                        <div class="size-4" onclick="d5()">7</div>
+                        <div class="size-5" onclick="d6()">8</div>
+                        <div class="size-6" onclick="d7()">9</div>
+                        <div class="size-7" onclick="d8()">10</div>
+                        <div class="size-7" onclick="d9()">11</div>
+                    </div>-->
+          </div>
 
           <div class="btn-details">
-            <!-- <button class="bouncing-button" id="btnn">Order and Save 80%</button> -->
+            <!-- <button onclick="myFun()" class="bouncing-button" id="btnn">Order and Save 80%</button> -->
             <div class="product-form" id="forms">
               <form
                 onsubmit="return validate()"
@@ -243,6 +286,13 @@
               </form>
             </div>
             <script>
+              function myFun() {
+                let x = document.getElementById("forms");
+                let btnn = document.getElementById("btnn");
+                x.style.display = "block";
+                btnn.classList.remove("bouncing-button");
+              }
+
               function validate() {
                 var email = document.getElementById("email").value;
                 var phone = document.getElementById("phone").value;
@@ -252,22 +302,6 @@
                 }
               }
             </script>
-          </div>
-        </div>
-      </div>
-      <div class="product-flex">
-        <div class="picture">
-          <div class="column-9 main-img-9">
-            <div id="img-holders"></div>
-          </div>
-          <div class="preview edit-w1" id="Thumbnails">
-            <div></div>
-          </div>
-        </div>
-        <div class="content">
-          <div class="btn-details">
-            <!-- <button class="bouncing-button" id="btnn">Order and Save 80%</button> -->
-
             <p>30-Day Return and Money-Back Guarantee</p>
             <div class="prodt-content">
               <p>
@@ -358,11 +392,12 @@
             </div>
             <div class="image-section">
               <img
-                src="./assets/reviewassets/Cookware_Blog_Image_1000_x_560.png"
+                src="./assets/reviewassets/Screenshot 2024-09-13 at 08.46.18.png"
                 alt="Review"
               />
             </div>
           </div>
+
           <div id="reviewList">
             <h3>Reviews:</h3>
             <strong>Willaim.K</strong> (4 stars)<br />The product is Awesome
